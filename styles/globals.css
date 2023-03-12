@@ -8,3 +8,8 @@
     @apply scroll-smooth;
   }
 }
+@layer base {
+  .hyperlink a {
+    @apply text-blue underline;
+  }
+}
