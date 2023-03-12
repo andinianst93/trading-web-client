@@ -49,10 +49,8 @@ const SingleArticle = ({ articles }) => {
                 alt={title}
               />
               <div className='mt-4 prose max-w-none leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
-                <ReactMarkdown children={body} remarkPlugins={[remarkBreaks]}>
-                  {
-                    // eslint-disable-next-line
-                  }
+                <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                  {body}
                 </ReactMarkdown>
               </div>
               <div className='mx-auto w-full max-w-4xl mt-8'>
