@@ -43,7 +43,7 @@ const SingleArticle = ({ articles }) => {
               </header>
               <Image
                 src={image.data.attributes.url}
-                width={1280}
+                width={968}
                 height={720}
                 className='rounded-2xl'
                 alt={title}
