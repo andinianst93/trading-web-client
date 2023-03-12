@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import footer from '@/data/footer'
-
+import Image from 'next/image'
 const Footer = () => {
   return (
     <div>
@@ -13,13 +13,17 @@ const Footer = () => {
                 XXX
               </div>
               <div>
-                <img
+                <Image
                   src='/images/appstore_footer.png'
                   alt='download'
+                  width={320}
+                  height={150}
                   className='mb-4 w-[125px]'
                 />
-                <img
+                <Image
                   src='/images/playstore_footer.png'
+                  width={320}
+                  height={150}
                   alt='download'
                   className='w-[125px] h-[40px] rounded-lg'
                 />
