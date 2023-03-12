@@ -64,6 +64,7 @@ const navlink = [
           { name: 'Video', link: '/video-trading' },
           { name: 'Kelas', link: '/kelas-trading' },
           { name: 'Ebook', link: '/ebook' },
+          { name: 'Kalkulator', link: '/kalkulator' },
         ],
       },
     ],
