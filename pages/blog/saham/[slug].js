@@ -49,10 +49,7 @@ const SingleArticle = ({ articles }) => {
                 alt={title}
               />
               <div className='mt-4 prose max-w-none leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
-                <ReactMarkdown
-                  children={body}
-                  remarkPlugins={[remarkBreaks]}
-                ></ReactMarkdown>
+                <ReactMarkdown children={body} remarkPlugins={[remarkBreaks]} />
               </div>
               <div className='mx-auto w-full max-w-4xl mt-8'>
                 <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8'>
