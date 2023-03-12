@@ -48,7 +48,7 @@ const BlogCard = () => {
                 viewBox='0 0 7 12'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
-                className='text-black rtl:rotate-180 '
+                className='text-black'
               >
                 <path
                   d='M1.05005 10.7998L5.51089 6.6576C5.93695 6.26197 5.93695 5.58764 5.51089 5.19201L1.05005 1.0498'

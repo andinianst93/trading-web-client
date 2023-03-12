@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
-const BlogCardDetails = ({ a }) => {
+const BlogCardCategory = ({ a }) => {
   return (
     <article className='p-6 bg-white rounded-lg shadow-md '>
       <Image
@@ -32,8 +31,8 @@ const BlogCardDetails = ({ a }) => {
       <div className='flex justify-between items-center'>
         <p>{a.attributes.author.data.attributes.name}</p>
         <Link
-          href='#'
-          className='inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline'
+          href={`/blog/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
+          className='inline-flex items-center font-medium text-primary-600 hover:underline'
         >
           Read more
           <svg
@@ -54,4 +53,4 @@ const BlogCardDetails = ({ a }) => {
   )
 }
 
-export default BlogCardDetails
+export default BlogCardCategory

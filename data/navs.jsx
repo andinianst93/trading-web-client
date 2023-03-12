@@ -17,6 +17,7 @@ const navlink = [
           { name: 'Komoditas', link: '/komoditas' },
           { name: 'Indeks', link: '/indeks' },
           { name: 'Saham', link: '/saham' },
+          { name: 'Test', link: '/test' },
         ],
       },
     ],
@@ -102,6 +103,7 @@ const navlink = [
         sublink: [
           { name: 'Tentang Kami', link: '/tentang-kami' },
           { name: 'Hubungi Kami', link: '/hubungi-kami' },
+          { name: 'Press Room', link: '/press-room' },
           { name: 'Karir', link: '/karir' },
         ],
       },

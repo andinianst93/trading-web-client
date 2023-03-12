@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import Container from '@/components/layout/container'
 import Breadcrumb from '@/components/Breadcrumb'
-import BlogCardIndex from '@/components/BlogCardIndex'
+import BlogCardCategory from '@/components/BlogCardCategory'
 import SearchBlog from '@/components/SearchBlog'
 import Pagination from '@/components/Pagination'
 import { fetchAPI } from '@/config'
 import HeroPage from '@/components/HeroPage'
 import { paginate } from '@/components/Paginate'
-import TopBlog from '@/components/TopBlog'
 import Link from 'next/link'
-import Cta from '@/components/Cta'
+
 const BlogIndex = ({ articles, categories }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 6
@@ -33,45 +32,53 @@ const BlogIndex = ({ articles, categories }) => {
         <section className='text-black py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6'>
           <div className='container'>
             <div>
-              <div className='md:flex md:items-center md:justify-between'>
-                <h2 className='text-xl font-bold mb-4'>Browse by Topic</h2>
-                <SearchBlog />
-              </div>
+              <SearchBlog />
+              <h2 className='text-xl font-bold'>Browse by Topic</h2>
               <div className='grid grid-cols-2 lg:grid-cols-5 gap-x-2 gap-y-2 mt-4'>
                 <Link
-                  href='#'
-                  className='text-white bg-black border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                  href='/blog'
+                  className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
                   All
                 </Link>
-                {categories.map((i) => {
-                  return (
-                    <Link
-                      href={`/blog/${i.attributes.slug}`}
-                      key={i.id}
-                      className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
-                    >
-                      {i.attributes.title}
-                    </Link>
-                  )
-                })}
+                <Link
+                  href={`/blog/saham`}
+                  className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                >
+                  Saham
+                </Link>
+                <Link
+                  href={`/blog/komoditas`}
+                  className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                >
+                  Komoditas
+                </Link>
+                <Link
+                  href={`/blog/forex`}
+                  className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                >
+                  Forex
+                </Link>
+                <Link
+                  href={`/blog/indeks`}
+                  className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                >
+                  Indeks
+                </Link>
+                <Link
+                  href={`/blog/informasi-keuangan`}
+                  className='text-white bg-black border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                >
+                  Informasi Keuangan
+                </Link>
               </div>
             </div>
           </div>
-
           {/* Articles */}
-          <div className='lg:grid lg:grid-flow-col'>
-            <div className='grid gap-8 lg:grid-cols-2 border-r-[0.2px] border-gray-three'>
+          <div>
+            <div className='grid gap-8 lg:grid-cols-2'>
               {paginatedPosts.map((a) => {
-                return <BlogCardIndex key={a.id} a={a} />
-              })}
-            </div>
-            <div className='lg:max-w-[280px]'>
-              <h2 className='lg:text-lg lg:ml-4 lg:font-bold lg:block hidden'>
-                Top Posts
-              </h2>
-              {articles.map((a) => {
-                return <TopBlog key={a.id} a={a} />
+                return <BlogCardCategory key={a.id} a={a} />
               })}
             </div>
           </div>
@@ -84,7 +91,6 @@ const BlogIndex = ({ articles, categories }) => {
             />
           </div>
         </section>
-        <Cta />
       </div>
     </Container>
   )
@@ -92,7 +98,7 @@ const BlogIndex = ({ articles, categories }) => {
 
 export async function getStaticProps() {
   const articlesRes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc&filters[category][title][$eqi]=informasi%20keuangan`
   )
   const categoriesRes = await fetchAPI(
     `${process.env.NEXT_PUBLIC_API_URL}/api/categories`

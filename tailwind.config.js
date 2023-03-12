@@ -26,6 +26,14 @@ module.exports = {
       black: '#08111F',
       primary: '#6082B6',
       secondary: '#1200ff',
+      blue: {
+        DEFAULT: '#1d4ed8',
+        dark: '#1e40af',
+        one: '#2563eb',
+        two: '#3b82f6',
+        three: '#60a5fa',
+      },
+
       gray: {
         DEFAULT: '#7780A1',
         dark: '#1C2331',
@@ -45,5 +53,8 @@ module.exports = {
       }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography'),
+  ],
 }

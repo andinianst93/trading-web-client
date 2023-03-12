@@ -1,15 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
-const BlogCardDetails = ({ a }) => {
+const BlogCardIndex = ({ a }) => {
   return (
     <article className='p-6 bg-white rounded-lg shadow-md '>
       <Image
         src={a.attributes.image.data.attributes.url}
         width={850}
-        height={150}
-        className='rounded-lg object-cover w-full h-[250px]'
+        height={350}
+        className='rounded-lg lg:w-[350px] lg:h-[200px] md:h-[350px] w-full h-[180px] md:object-cover'
         alt={a.attributes.title}
       ></Image>
       <div className='flex justify-between items-center my-5 text-gray-500'>
@@ -32,8 +31,8 @@ const BlogCardDetails = ({ a }) => {
       <div className='flex justify-between items-center'>
         <p>{a.attributes.author.data.attributes.name}</p>
         <Link
-          href='#'
-          className='inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline'
+          href={`/blog/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
+          className='inline-flex items-center font-medium text-primary-600 hover:underline'
         >
           Read more
           <svg
@@ -54,4 +53,4 @@ const BlogCardDetails = ({ a }) => {
   )
 }
 
-export default BlogCardDetails
+export default BlogCardIndex

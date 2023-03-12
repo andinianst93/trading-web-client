@@ -10,25 +10,18 @@ import { fetchAPI } from '../../../config/index'
 const Glosarium = ({ glosariA }) => {
   return (
     <Container>
-      <nav className='bg-black'>
-        <Breadcrumb3 title1='Glosarium' title2='A' slug='glosarium' />
-      </nav>
-      <main>
-        <HeroPage title='A' />
-        <section className='container text-black'>
-          <div className='pt-8'>
-            <Link
-              href='/glosarium'
-              className='bg-secondary text-white px-2 py-2 rounded-md hover:bg-white hover:text-secondary hover:border-2'
-            >
-              Kembali ke Glosarium
-            </Link>
-          </div>
-          {glosariA.map((a) => {
-            return <GlosariInfoAlphabet key={a.id} a={a} />
-          })}
-        </section>
-      </main>
+      <div className='overflow-x-hidden '>
+        <nav className='bg-black'>
+          <Breadcrumb3 title1='Glosarium' title2='A' slug='glosarium' />
+        </nav>
+        <div>
+          <section className='container text-black'>
+            {glosariA.map((a) => {
+              return <GlosariInfoAlphabet key={a.id} a={a} />
+            })}
+          </section>
+        </div>
+      </div>
     </Container>
   )
 }

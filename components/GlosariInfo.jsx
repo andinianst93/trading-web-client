@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 const GlosariInfo = ({ glosaricat }) => {
   const [filter, setFilter] = React.useState('')
+
   const searchText = (event) => {
     setFilter(event.target.value)
   }
@@ -16,7 +17,7 @@ const GlosariInfo = ({ glosaricat }) => {
   })
   return (
     <section className='px-8 mt-8'>
-      <div className='max-w-[200px] md:left-[370px] lg:left-[130px] mb-8 absolute top-[500px] lg:top-[500px] md:top-[450px]'>
+      <div className='max-w-[200px] md:left-[300px] lg:left-[370px] mb-8 absolute top-[500px] lg:top-[500px] md:top-[450px]'>
         <input
           aria-label='Search'
           type='text'
@@ -27,11 +28,11 @@ const GlosariInfo = ({ glosaricat }) => {
         />
       </div>
       {!dataSearch.length && 'Please click All and try again.'}
-      <div className='container grid lg:grid-cols-4'>
+      <div className='container grid md:grid-cols-2 lg:grid-cols-4'>
         {dataSearch.map((node, index) => {
           const title = node.attributes.title
           const slug = node.attributes.slug
-          const alphabet = node.attributes.letter.data.attributes.alphabet
+          const alphabet = node.attributes.letter.data?.attributes.alphabet
           return (
             <article key={index} className='my-2'>
               <Link

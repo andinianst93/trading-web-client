@@ -7,24 +7,27 @@ import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import GlosariSearch from '@/components/glosarisearch'
 import { fetchAPI } from '../../config/index'
-const Glosarium = ({ glosaricat }) => {
+const Glosarium = ({ glosariInfo }) => {
   const allCategories = [
     'all',
     ...new Set(
-      glosaricat.map((item) => item.attributes.letter.data.attributes.alphabet)
+      glosariInfo.map(
+        (item) => item.attributes.letter.data?.attributes.alphabet
+      )
     ),
   ]
 
-  const [glosariItem, setglosariItem] = useState(glosaricat)
+  const [glosariItem, setglosariItem] = useState(glosariInfo)
   const [categories, setCategories] = useState(allCategories)
+  const [currentCat, setCurrentCat] = useState('all')
 
   const filterItems = (category) => {
     if (category === 'all') {
-      setglosariItem(glosaricat)
+      setglosariItem(glosariInfo)
       return
     }
-    const newItems = glosaricat.filter(
-      (item) => item.attributes.letter.data.attributes.alphabet === category
+    const newItems = glosariInfo.filter(
+      (item) => item.attributes.letter.data?.attributes.alphabet === category
     )
     setglosariItem(newItems)
   }
@@ -42,7 +45,11 @@ const Glosarium = ({ glosaricat }) => {
           />
         </div>
         <section className='text-black'>
-          <GlosariCat categories={categories} filterItems={filterItems} />
+          <GlosariCat
+            categories={categories}
+            filterItems={filterItems}
+            currentCat={currentCat}
+          />
           <GlosariInfo glosaricat={glosariItem} />
         </section>
       </div>
@@ -50,12 +57,12 @@ const Glosarium = ({ glosaricat }) => {
   )
 }
 export async function getStaticProps() {
-  const glosaricatRes = await fetchAPI(
+  const glosariInfoRes = await fetchAPI(
     `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*`
   )
   return {
     props: {
-      glosaricat: glosaricatRes.data,
+      glosariInfo: glosariInfoRes.data,
     },
     revalidate: 1,
   }

@@ -33,7 +33,11 @@ const Sidebar = () => {
                         <ul className=''>
                           {i.sublink.map((x) => {
                             return (
-                              <li key={x.name} className='text-base px-12'>
+                              <li
+                                key={x.name}
+                                className='text-base px-12'
+                                onClick={toggleLinks}
+                              >
                                 <Link
                                   href={`${x.link}`}
                                   className='hover:underline'
@@ -61,8 +65,8 @@ const Sidebar = () => {
           Buka Akun Demo
         </Link>
         <Link
-          href='/buka-akun-live'
-          className='bg-black text-white font-semibold py-2 px-4 rounded border'
+          href='/buka-akun-demo'
+          className='bg-black text-white font-semibold py-2 px-4 border rounded'
         >
           Buka Akun Live
         </Link>

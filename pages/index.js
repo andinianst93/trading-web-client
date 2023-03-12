@@ -22,14 +22,14 @@ export default function Home() {
       <Container>
         <div className='overflow-x-hidden'>
           <Hero />
-          <Sectionone />
+          {/* <Sectionone />
           <Sectiontwo />
           <Sectionthree />
           <section className='lg:py-[60px] my-[110px] px-5'>
             <Testimonial className='mx-auto max-w-[1440px] py-14 md:py-20 rounded-[32px]' />
           </section>
           <Faq showTitle={true} />
-          <BlogCard />
+          <BlogCard /> */}
         </div>
       </Container>
     </>
