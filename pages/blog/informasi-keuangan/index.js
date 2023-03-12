@@ -32,8 +32,10 @@ const BlogIndex = ({ articles, categories }) => {
         <section className='text-black py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6'>
           <div className='container'>
             <div>
-              <SearchBlog />
-              <h2 className='text-xl font-bold'>Browse by Topic</h2>
+              <div className='md:flex md:items-center md:justify-between'>
+                <h2 className='text-xl font-bold mb-4'>Browse by Topic</h2>
+                <SearchBlog />
+              </div>
               <div className='grid grid-cols-2 lg:grid-cols-5 gap-x-2 gap-y-2 mt-4'>
                 <Link
                   href='/blog'
