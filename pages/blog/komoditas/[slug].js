@@ -27,6 +27,15 @@ const SingleArticle = ({ articles }) => {
           <div className='flex justify-between px-4 mx-auto'>
             <article className='mx-auto w-full max-w-4xl format format-sm sm:format-base lg:format-lg format-blue '>
               <header className='mb-4 lg:mb-6 not-format'>
+                <Link
+                  href={`/blog/${category.data.attributes.slug}`}
+                  className='text-base font-light text-gray-500 mb-2'
+                >
+                  {category.data.attributes.title}
+                </Link>
+                <h1 className='mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl '>
+                  {title}
+                </h1>
                 <address className='flex items-center mb-2 not-italic'>
                   <div className='inline-flex items-center mr-3 text-sm text-gray-900'>
                     <div>
@@ -36,9 +45,6 @@ const SingleArticle = ({ articles }) => {
                     </div>
                   </div>
                 </address>
-                <h1 className='mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl '>
-                  {title}
-                </h1>
                 <p className='mt-4'>{description}</p>
               </header>
               <Image

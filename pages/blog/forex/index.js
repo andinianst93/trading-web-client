@@ -8,7 +8,7 @@ import { fetchAPI } from '@/config'
 import HeroPage from '@/components/HeroPage'
 import { paginate } from '@/components/Paginate'
 import Link from 'next/link'
-
+import Cta from '@/components/Cta'
 const BlogIndex = ({ articles, categories }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 6
@@ -93,6 +93,7 @@ const BlogIndex = ({ articles, categories }) => {
             />
           </div>
         </section>
+        <Cta />
       </div>
     </Container>
   )
