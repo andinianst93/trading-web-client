@@ -25,11 +25,11 @@ const SingleArticle = ({ articles }) => {
 
         <section className='text-black py-8 px-4 lg:py-8 lg:px-6 mx-auto'>
           <div className='flex justify-between px-4 mx-auto'>
-            <article className='mx-auto w-full max-w-4xl format format-sm sm:format-base lg:format-lg format-blue '>
-              <header className='mb-4 lg:mb-6 not-format'>
+            <article className='mx-auto w-full max-w-4xl'>
+              <header className='mb-4 lg:mb-6'>
                 <Link
                   href={`/blog/${category.data.attributes.slug}`}
-                  className='text-base font-light text-gray-500 mb-2'
+                  className='text-base font-light text-gray-500 mb-2 hover:text-blue'
                 >
                   {category.data.attributes.title}
                 </Link>
@@ -66,7 +66,7 @@ const SingleArticle = ({ articles }) => {
                 <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8'>
                   <Link href='#'>
                     <Image
-                      className='w-[200px] rounded-full'
+                      className='w-[150px] rounded-full'
                       src='https://res.cloudinary.com/andinianst93/image/upload/v1678609089/Andini_Anissa_Nasution_1024x1024_b2a4a3ee13.jpg'
                       width={720}
                       height={480}

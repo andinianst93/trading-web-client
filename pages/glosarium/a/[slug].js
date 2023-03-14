@@ -3,15 +3,15 @@ import Link from 'next/link'
 import Container from '@/components/layout/container'
 import { fetchAPI } from '@/config'
 import Image from 'next/image'
-import Breadcrumb4 from '@/components/Breadcrumb4'
+import Breadcrumb5 from '@/components/Breadcrumb5'
 const EventPage = ({ glosariARes }) => {
   const glosariA = glosariARes.map((x) => x.attributes)
   const [{ title, description }] = glosariA
   return (
     <Container>
-      <main>
-        <div className='bg-black'>
-          <Breadcrumb4
+      <div>
+        <div>
+          <Breadcrumb5
             title1='Glosarium'
             title2='A'
             slug='glosarium'
@@ -19,11 +19,13 @@ const EventPage = ({ glosariARes }) => {
             title3={title}
           />
         </div>
-        <section>
-          <h1 className='text-black'>{title}</h1>
-          <p className='text-black'>{description}</p>
+        <section className='text-black py-8 px-4 lg:py-8 lg:px-6 mx-auto'>
+          <div className='mx-auto w-full max-w-4xl'>
+            <h1 className='text-black'>{title}</h1>
+            <p className='text-black'>{description}</p>
+          </div>
         </section>
-      </main>
+      </div>
     </Container>
   )
 }

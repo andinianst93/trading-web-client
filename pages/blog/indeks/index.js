@@ -12,7 +12,7 @@ import Cta from '@/components/Cta'
 
 const BlogIndex = ({ articles, categories }) => {
   const [currentPage, setCurrentPage] = useState(1)
-  const pageSize = 6
+  const pageSize = 10
   const onPageChange = (page) => {
     setCurrentPage(page)
   }

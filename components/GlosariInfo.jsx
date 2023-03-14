@@ -17,7 +17,7 @@ const GlosariInfo = ({ glosaricat }) => {
   })
   return (
     <section className='px-8 mt-8'>
-      <div className='max-w-[200px] md:left-[300px] lg:left-[370px] mb-8 absolute top-[500px] lg:top-[500px] md:top-[450px]'>
+      <div className='max-w-[200px] lg:left-[130px] mb-8 absolute top-[500px] lg:top-[500px] md:top-[450px]'>
         <input
           aria-label='Search'
           type='text'
