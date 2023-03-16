@@ -6,12 +6,12 @@ const Hero = () => {
       <div className='container'>
         <div className='relative z-[1] text-white lg:w-3/5 xl:w-1/2 mx-auto flex flex-col justify-center items-center'>
           <h1 className='text-[50px] text-center leading-none font-extrabold lg:text-[60px] lg:leading-[90px]'>
-            <span className='text-[#f1d0a9]'>No nostro, </span>
-            <span className='text-[#47cffc]'>Salutandi duo</span>
+            <span className='text-[#f1d0a9]'>Trading Forex Praktis, </span>
+            <span className='text-[#47cffc]'>Anti Ribet</span>
           </h1>
           <p className='my-8 text-lg lg:w-3/4 text-center'>
-            Quo ad mucius noluisse abhorreant. Nibh primis melius his eu, eos
-            dicant expetendis ne. Te aeque possim definiebas pro.
+            Bergabunglah dengan ribuan trader sukses yang telah memilih kami
+            sebagai broker andalan.
           </p>
           <Link
             href='/akun'

@@ -4,6 +4,7 @@ import GlosariCat from '@/components/GlosariCat'
 import GlosariInfo from '@/components/GlosariInfo'
 import HeroPage from '@/components/HeroPage'
 import Link from 'next/link'
+import Cta from '@/components/Cta'
 import Breadcrumb from '@/components/Breadcrumb'
 import GlosariSearch from '@/components/glosarisearch'
 import { fetchAPI } from '../../config/index'
@@ -44,7 +45,7 @@ const Glosarium = ({ glosariInfo }) => {
             desc=' Kami telah menyusun Glosarium Forex ini untuk mencoba membantu Anda dengan lebih baik memahami pasar FX dan informasi lain tentang pasar.'
           />
         </div>
-        <section className='text-black'>
+        <section className='text-black mb-12'>
           <div className='container justify-center flex items-center'>
             <GlosariSearch />
           </div>
