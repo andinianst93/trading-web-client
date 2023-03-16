@@ -6,13 +6,12 @@ const Hero = () => {
       <div className='container'>
         <div className='relative z-[1] text-white lg:w-3/5 xl:w-1/2 mx-auto flex flex-col justify-center items-center'>
           <h1 className='text-[50px] text-center leading-none font-extrabold lg:text-[60px] lg:leading-[90px]'>
-            <span className='text-[#f1d0a9]'>Wake Up, </span>
-            <span className='text-[#47cffc]'>It is a Bad Dream</span>
+            <span className='text-[#f1d0a9]'>No nostro, </span>
+            <span className='text-[#47cffc]'>Salutandi duo</span>
           </h1>
           <p className='my-8 text-lg lg:w-3/4 text-center'>
-            No one on my side. I was fighting but I just feel too tired to be
-            fighting. Guess I am not the fighting kind. Would not mind it if you
-            were by my side.
+            Quo ad mucius noluisse abhorreant. Nibh primis melius his eu, eos
+            dicant expetendis ne. Te aeque possim definiebas pro.
           </p>
           <Link
             href='/akun'
