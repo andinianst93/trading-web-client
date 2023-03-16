@@ -3,15 +3,17 @@ import Link from 'next/link'
 import Container from '@/components/layout/container'
 import { fetchAPI } from '@/config'
 import Image from 'next/image'
-import Breadcrumb5 from '@/components/Breadcrumb5'
-const EventPage = ({ glosariARes }) => {
+import Breadcrumb6 from '@/components/Breadcrumb6'
+import ReactMarkdown from 'react-markdown'
+import remarkBreaks from 'remark-breaks'
+const GlosariA = ({ glosariARes }) => {
   const glosariA = glosariARes.map((x) => x.attributes)
-  const [{ title, description }] = glosariA
+  const [{ title, description, body }] = glosariA
   return (
     <Container>
       <div>
         <div>
-          <Breadcrumb5
+          <Breadcrumb6
             title1='Glosarium'
             title2='A'
             slug='glosarium'
@@ -20,9 +22,22 @@ const EventPage = ({ glosariARes }) => {
           />
         </div>
         <section className='text-black py-8 px-4 lg:py-8 lg:px-6 mx-auto'>
-          <div className='mx-auto w-full max-w-4xl'>
-            <h1 className='text-black'>{title}</h1>
-            <p className='text-black'>{description}</p>
+          <div className='flex justify-between px-4 mx-auto'>
+            <article className='mx-auto w-full max-w-4xl'>
+              <header className='mb-4 lg:mb-6'>
+                <h1 className='mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl '>
+                  {title}
+                </h1>
+              </header>
+              <div className='mt-4 prose max-w-none leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
+                <ReactMarkdown
+                  remarkPlugins={[remarkBreaks]}
+                  className='hyperlink'
+                >
+                  {body}
+                </ReactMarkdown>
+              </div>
+            </article>
           </div>
         </section>
       </div>
@@ -41,4 +56,4 @@ export async function getServerSideProps({ params }) {
   }
 }
 
-export default EventPage
+export default GlosariA

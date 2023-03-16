@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Container from '@/components/layout/container'
-import Breadcrumb from '@/components/Breadcrumb'
+import Breadcrumb3 from '@/components/Breadcrumb3'
 import BlogCardCategory from '@/components/BlogCardCategory'
 import SearchBlog from '@/components/SearchBlog'
 import Pagination from '@/components/Pagination'
@@ -22,7 +22,7 @@ const BlogIndex = ({ articles, categories }) => {
       <div className='overflow-x-hidden '>
         <div className='bg-black bg-[url(/images/banner-bg.png)]'>
           <nav className='bg-black'>
-            <Breadcrumb title1='Blog' />
+            <Breadcrumb3 title1='Blog' slug='blog' title2='Saham' />
           </nav>
           <HeroPage
             title='Blog'

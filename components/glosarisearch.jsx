@@ -5,22 +5,19 @@ const GlosariSearch = () => {
   const router = useRouter()
   const handleSubmit = (e) => {
     e.preventDefault()
-    router.push(`/glosariums/search?term=${term}`)
+    router.push(`/glosarium/search?term=${term}`)
     setTerm()
   }
   return (
-    <form
-      className='relative mx-8 mt-8 mr-8 basis-3/12 lg:block'
-      onSubmit={handleSubmit}
-    >
+    <form className='relative mt-8 basis-3/12 lg:block' onSubmit={handleSubmit}>
       <input
         type='search'
         value={term}
         onChange={(e) => setTerm(e.target.value)}
-        className='focus:ring-accent border-jacarta-100 w-max rounded-full border py-[0.6875rem] px-4 pl-10'
+        className='focus:ring-accent w-max lg:w-screen lg:max-w-lg border py-[0.6875rem] px-4 pl-10 rounded-lg'
         placeholder='Search'
       />
-      <span className='absolute left-0 top-0 flex h-full w-12 items-center justify-center rounded-full'>
+      <span className='absolute left-0 top-0 flex h-full w-12 items-center justify-center'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 24 24'

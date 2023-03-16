@@ -19,7 +19,7 @@ const Glosarium = ({ glosariInfo }) => {
 
   const [glosariItem, setglosariItem] = useState(glosariInfo)
   const [categories, setCategories] = useState(allCategories)
-  const [currentCat, setCurrentCat] = useState('all')
+  const [currentCat, setCurrentCat] = useState('')
 
   const filterItems = (category) => {
     if (category === 'all') {
@@ -45,6 +45,9 @@ const Glosarium = ({ glosariInfo }) => {
           />
         </div>
         <section className='text-black'>
+          <div className='container justify-center flex items-center'>
+            <GlosariSearch />
+          </div>
           <GlosariCat
             categories={categories}
             filterItems={filterItems}

@@ -6,7 +6,6 @@ const GlosariInfoAlphabet = ({ a }) => {
       <div className='container grid lg:grid-cols-4'>
         {' '}
         {a.attributes.glosariums.data.map((item) => {
-          console.log(item)
           return (
             <article className='my-2' key={item.id}>
               <Link
@@ -14,7 +13,7 @@ const GlosariInfoAlphabet = ({ a }) => {
                 className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
               >
                 <div className='flex flex-col justify-between leading-normal'>
-                  <h3 className='text-xl font-thin text-gray-900 capitalize'>
+                  <h3 className='text-xl text-black font-thin text-gray-900 capitalize'>
                     {item.attributes.title}
                   </h3>
                 </div>
