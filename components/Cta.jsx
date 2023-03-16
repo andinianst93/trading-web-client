@@ -10,8 +10,7 @@ const Cta = () => {
           </h2>
           <p className='mb-6 font-light text-white md:text-lg'>
             Bergabunglah dengan ribuan trader sukses yang telah memilih kami
-            sebagai broker andalan. Kami menyediakan all in one trading platform
-            untuk mengoptimalkan hasil trading Anda.
+            sebagai broker andalan.
           </p>
           <Link
             href='/akun'
