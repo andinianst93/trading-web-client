@@ -63,7 +63,7 @@ const SingleArticle = ({ articles }) => {
                 </ReactMarkdown>
               </div>
               <div className='mx-auto w-full max-w-4xl mt-8'>
-                <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8 pt-8'>
+                <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8 pt-8 lg:pt-0'>
                   <Link href='#'>
                     <Image
                       className='w-[150px] rounded-full'
