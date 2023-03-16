@@ -63,10 +63,10 @@ const SingleArticle = ({ articles }) => {
                 </ReactMarkdown>
               </div>
               <div className='mx-auto w-full max-w-4xl mt-8'>
-                <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8'>
+                <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8 pt-8'>
                   <Link href='#'>
                     <Image
-                      className='w-[150px] rounded-full pt-8'
+                      className='w-[150px] rounded-full'
                       src='https://res.cloudinary.com/andinianst93/image/upload/v1678609089/Andini_Anissa_Nasution_1024x1024_b2a4a3ee13.jpg'
                       width={720}
                       height={480}
