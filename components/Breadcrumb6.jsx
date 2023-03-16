@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const Breadcrumb6 = ({ title1, slug, title2, title3, slug2 }) => {
   return (
-    <nav className='text-black pt-4 lg:block hidden'>
+    <nav className='text-black pt-4 px-8'>
       <div className='mx-auto w-full max-w-4xl'>
         <ol className='inline-flex items-center space-x-1 md:space-x-3'>
           <li className='inline-flex items-center'>

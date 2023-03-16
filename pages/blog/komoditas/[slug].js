@@ -66,14 +66,14 @@ const SingleArticle = ({ articles }) => {
                 <div className='items-center bg-gray-50 rounded-lg bg-gray-three sm:flex px-8'>
                   <Link href='#'>
                     <Image
-                      className='w-[150px] rounded-full'
+                      className='w-[150px] rounded-full pt-8'
                       src='https://res.cloudinary.com/andinianst93/image/upload/v1678609089/Andini_Anissa_Nasution_1024x1024_b2a4a3ee13.jpg'
                       width={720}
                       height={480}
                       alt='Andini Anissa'
                     />
                   </Link>
-                  <div className='p-5'>
+                  <div className='p-5 pb-8'>
                     <h3 className='text-xl font-bold tracking-tight text-gray-900'>
                       <Link href='#'>{author.data.attributes.name}</Link>
                     </h3>
