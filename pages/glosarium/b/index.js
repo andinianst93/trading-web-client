@@ -31,10 +31,9 @@ const GlosariumB = ({ glosariA }) => {
                 <section className='px-8 mt-8' key={index}>
                   <div className='container grid lg:grid-cols-4'>
                     {' '}
-                    {a.attributes.glosariums.data.map((item) => {
-                      console.log(item)
+                    {a.attributes.glosariums.data.map((item, index) => {
                       return (
-                        <article className='my-2' key={item.id}>
+                        <article className='my-2' key={index}>
                           <Link
                             href={`/glosarium/b/${item.attributes.slug}`}
                             className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
