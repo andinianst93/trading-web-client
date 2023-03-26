@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Container from '@/components/layout/container'
 import GlosariCat from '@/components/GlosariCat'
 import GlosariInfoAlphabet from '@/components/GlosariInfoAlphabet'
-
+import Cta from '@/components/Cta'
 import Breadcrumb3 from '@/components/Breadcrumb3'
 import GlosariSearch from '@/components/glosarisearch'
 import { fetchAPI } from '../../../config/index'
@@ -26,13 +26,14 @@ const Glosarium = ({ glosariA }) => {
               </div>
             )
           })}
-          <section className='container text-black'>
+          <section className='container text-black mb-16'>
             {glosariA.map((a) => {
               return <GlosariInfoAlphabet key={a.id} a={a} />
             })}
           </section>
         </div>
       </div>
+      <Cta />
     </Container>
   )
 }

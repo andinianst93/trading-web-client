@@ -57,6 +57,7 @@ const Glosarium = ({ glosariInfo }) => {
           <GlosariInfo glosaricat={glosariItem} />
         </section>
       </div>
+      <Cta />
     </Container>
   )
 }

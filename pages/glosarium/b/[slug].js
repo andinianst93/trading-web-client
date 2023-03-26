@@ -6,7 +6,9 @@ import Image from 'next/image'
 import Breadcrumb6 from '@/components/Breadcrumb6'
 import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
-const GlosariBSingle = ({ glosariBRes }) => {
+import Cta from '@/components/Cta'
+import RelatedGlo from '@/components/RelatedGlo'
+const GlosariBSingle = ({ glosariBRes, glosariRel }) => {
   const glosariB = glosariBRes.map((x) => x.attributes)
   const [{ title, description, body }] = glosariB
   return (
@@ -40,6 +42,14 @@ const GlosariBSingle = ({ glosariBRes }) => {
             </article>
           </div>
         </section>
+        <section className='text-black py-8 px-4 lg:py-8 lg:px-6 mx-auto'>
+          <div className='flex justify-between px-4 mx-auto'>
+            <div className='mx-auto w-full max-w-4xl'>
+              <RelatedGlo glosariRel={glosariRel} />
+            </div>
+          </div>
+        </section>
+        <Cta />
       </div>
     </Container>
   )
@@ -50,9 +60,11 @@ export async function getServerSideProps({ params }) {
   const glosariARes = await fetchAPI(
     `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[slug][$eq]=${slug}`
   )
-
+  const glosariRel = await fetchAPI(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[letter][alphabet][$eqi]=b`
+  )
   return {
-    props: { glosariBRes: glosariARes.data },
+    props: { glosariBRes: glosariARes.data, glosariRel: glosariRel.data },
   }
 }
 

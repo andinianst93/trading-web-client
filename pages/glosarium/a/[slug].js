@@ -7,7 +7,8 @@ import Breadcrumb6 from '@/components/Breadcrumb6'
 import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
 import Cta from '@/components/Cta'
-const GlosariA = ({ glosariARes }) => {
+import RelatedGlo from '@/components/RelatedGlo'
+const GlosariA = ({ glosariARes, glosariRel }) => {
   const glosariA = glosariARes.map((x) => x.attributes)
   const [{ title, description, body }] = glosariA
   return (
@@ -30,7 +31,7 @@ const GlosariA = ({ glosariARes }) => {
                   {title}
                 </h1>
               </header>
-              <div className='mt-4 prose max-w-none leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
+              <div className='mt-4 prose max-w-3xl leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
                 <ReactMarkdown
                   remarkPlugins={[remarkBreaks]}
                   className='hyperlink'
@@ -39,6 +40,13 @@ const GlosariA = ({ glosariARes }) => {
                 </ReactMarkdown>
               </div>
             </article>
+          </div>
+        </section>
+        <section className='text-black py-8 px-4 lg:py-8 lg:px-6 mx-auto'>
+          <div className='flex justify-between px-4 mx-auto'>
+            <div className='mx-auto w-full max-w-4xl'>
+              <RelatedGlo glosariRel={glosariRel} />
+            </div>
           </div>
         </section>
         <Cta />
@@ -52,9 +60,11 @@ export async function getServerSideProps({ params }) {
   const glosariARes = await fetchAPI(
     `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[slug][$eq]=${slug}`
   )
-
+  const glosariRel = await fetchAPI(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[letter][alphabet][$eqi]=a`
+  )
   return {
-    props: { glosariARes: glosariARes.data },
+    props: { glosariARes: glosariARes.data, glosariRel: glosariRel.data },
   }
 }
 
