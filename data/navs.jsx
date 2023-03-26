@@ -83,7 +83,7 @@ const navlink = [
       {
         head: 'Market Update',
         id: 6,
-        sublink: [{ name: 'Kalender Ekonomi', link: '/kalender-ekonomi' }],
+        sublink: [{ name: 'Kalender Ekonomi', link: '/kalender' }],
       },
       {
         head: 'Blog',
