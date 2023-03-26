@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <div>
-      <footer className='bg-white py-14 lg:pt-[100px]'>
+      <footer className='bg-white pb-10 pt-10 lg:pt-[50px]'>
         <div className='lg:px-12'>
           <div className='grid gap-y-10 gap-x-4 sm:grid-cols-2 lg:grid-cols-4 px-6 lg:px-0'>
             <div>
@@ -32,9 +32,9 @@ const Footer = () => {
             {footer.map((f) => {
               return (
                 <div key={f.id}>
-                  <h2 className='mb-6 text-lg font-bold text-black'>
+                  <div className='mb-6 text-lg font-bold text-black'>
                     {f.name}
-                  </h2>
+                  </div>
                   {f.sublinks.map((item, index) => {
                     return (
                       <ul className='text-gray' key={index}>

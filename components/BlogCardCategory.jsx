@@ -18,13 +18,13 @@ const BlogCardCategory = ({ a }) => {
         <span className='text-base'>{a.attributes.updatedAt}</span>
       </div>
 
-      <h3 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+      <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
         <Link
           href={`/blog/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
         >
           {a.attributes.title}
         </Link>
-      </h3>
+      </h2>
       <p className='mb-5 font-light text-gray-500 line-clamp-2'>
         {a.attributes.description}
       </p>

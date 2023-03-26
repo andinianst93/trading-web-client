@@ -42,7 +42,7 @@ const BlogIndex = ({ articles, categories }) => {
                   href='#'
                   className='text-white bg-black border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  All
+                  <h3>All</h3>
                 </Link>
                 {categories.map((i) => {
                   return (
@@ -51,7 +51,7 @@ const BlogIndex = ({ articles, categories }) => {
                       key={i.id}
                       className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                     >
-                      {i.attributes.title}
+                      <h3>{i.attributes.title}</h3>
                     </Link>
                   )
                 })}
@@ -60,14 +60,20 @@ const BlogIndex = ({ articles, categories }) => {
           </div>
 
           {/* Articles */}
+
           <div className='lg:grid lg:grid-flow-col'>
-            <div className='grid gap-8 lg:grid-cols-2 border-r-[0.2px] border-gray-three'>
-              {paginatedPosts.map((a) => {
-                return <BlogCardIndex key={a.id} a={a} />
-              })}
+            <div className='border-r-[0.2px] border-gray-three'>
+              <h2 className='text-xl font-bold mb-4 mt-8 mx-4'>
+                Artikel Terbaru
+              </h2>
+              <div className='grid gap-8 lg:grid-cols-2 '>
+                {paginatedPosts.map((a) => {
+                  return <BlogCardIndex key={a.id} a={a} />
+                })}
+              </div>
             </div>
-            <div className='lg:max-w-[280px]'>
-              <h2 className='lg:text-lg lg:ml-4 lg:font-bold lg:block hidden'>
+            <div className='lg:max-w-[280px] lg:mt-8'>
+              <h2 className='lg:text-lg lg:ml-4 lg:font-bold lg:block hidden '>
                 Top Posts
               </h2>
               {articles.map((a) => {
@@ -75,14 +81,15 @@ const BlogIndex = ({ articles, categories }) => {
               })}
             </div>
           </div>
-          <div className='flex mt-8 justify-center items-center'>
+
+          <section className='flex mt-8 justify-center items-center'>
             <Pagination
               items={articles.length}
               currentPage={currentPage}
               pageSize={pageSize}
               onPageChange={onPageChange}
             />
-          </div>
+          </section>
         </section>
         <Cta />
       </div>
