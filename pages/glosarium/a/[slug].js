@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Breadcrumb6 from '@/components/Breadcrumb6'
 import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
+import Cta from '@/components/Cta'
 const GlosariA = ({ glosariARes }) => {
   const glosariA = glosariARes.map((x) => x.attributes)
   const [{ title, description, body }] = glosariA
@@ -40,6 +41,7 @@ const GlosariA = ({ glosariARes }) => {
             </article>
           </div>
         </section>
+        <Cta />
       </div>
     </Container>
   )
