@@ -45,37 +45,37 @@ const BlogIndex = ({ articles, categories }) => {
                   href='/blog'
                   className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  All
+                  <h3>All</h3>
                 </Link>
                 <Link
                   href={`/blog/saham`}
                   className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  Saham
+                  <h3>Saham</h3>
                 </Link>
                 <Link
                   href={`/blog/komoditas`}
                   className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  Komoditas
+                  <h3>Komoditas</h3>
                 </Link>
                 <Link
                   href={`/blog/forex`}
                   className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  Forex
+                  <h3>Forex</h3>
                 </Link>
                 <Link
                   href={`/blog/indeks`}
                   className='text-black bg-white border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  Indeks
+                  <h3>Indeks</h3>
                 </Link>
                 <Link
                   href={`/blog/informasi-keuangan`}
                   className='text-white bg-black border-[0.5px] focus:ring-4 focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
                 >
-                  Informasi Keuangan
+                  <h3> Informasi Keuangan</h3>
                 </Link>
               </div>
             </div>
