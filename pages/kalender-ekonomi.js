@@ -3,7 +3,7 @@ import Container from '@/components/layout/container'
 import HeroPage from '@/components/HeroPage'
 import Breadcrumb from '@/components/Breadcrumb'
 import Kalendermq from '@/components/Kalender'
-
+import Cta from '@/components/Cta'
 const kalenderEkonomi = () => {
   return (
     <Container>
@@ -21,6 +21,7 @@ const kalenderEkonomi = () => {
           </div>
         </section>
       </div>
+      <Cta />
     </Container>
   )
 }
