@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Breadcrumb3 from '@/components/Breadcrumb3'
 import GlosariSearch from '@/components/glosarisearch'
 import { fetchAPI } from '../../../config/index'
+import Cta from '@/components/Cta'
 const GlosariumC = ({ glosariA }) => {
   return (
     <Container>
@@ -24,16 +25,16 @@ const GlosariumC = ({ glosariA }) => {
               </div>
             )
           })}
-          <section className='container text-black'>
-            {glosariA.map((a) => {
+          <section className='container text-black mb-16'>
+            {glosariA.map((a, index) => {
               return (
-                <section className='px-8 mt-8'>
+                <section className='px-8 mt-8' key={index}>
                   <div className='container grid lg:grid-cols-4'>
                     {' '}
-                    {a.attributes.glosariums.data.map((item) => {
+                    {a.attributes.glosariums.data.map((item, index) => {
                       console.log(item)
                       return (
-                        <article className='my-2' key={item.id}>
+                        <article className='my-2' key={index}>
                           <Link
                             href={`/glosarium/c/${item.attributes.slug}`}
                             className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
@@ -54,6 +55,7 @@ const GlosariumC = ({ glosariA }) => {
           </section>
         </div>
       </div>
+      <Cta />
     </Container>
   )
 }
