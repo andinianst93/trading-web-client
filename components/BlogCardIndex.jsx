@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Moment from 'react-moment'
 const BlogCardIndex = ({ a }) => {
   return (
     <article className='p-6 bg-white rounded-lg shadow-md '>
@@ -15,7 +16,9 @@ const BlogCardIndex = ({ a }) => {
         <span className='bg-primary-100 text-primary-800 text-base font-medium inline-flex items-center px-2.5 py-0.5 rounded capitalize'>
           {a.attributes.category.data?.attributes.title}
         </span>
-        <span className='text-base'>{a.attributes.updatedAt}</span>
+        <Moment format='D MMM YYYY' className='text-base'>
+          {a.attributes.updatedAt}
+        </Moment>
       </div>
 
       <h3 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
