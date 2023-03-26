@@ -25,9 +25,9 @@ const GlosariumB = ({ glosariA }) => {
             )
           })}
           <section className='container text-black'>
-            {glosariA.map((a) => {
+            {glosariA.map((a, index) => {
               return (
-                <section className='px-8 mt-8'>
+                <section className='px-8 mt-8' key={index}>
                   <div className='container grid lg:grid-cols-4'>
                     {' '}
                     {a.attributes.glosariums.data.map((item) => {
