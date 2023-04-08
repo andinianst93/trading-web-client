@@ -9,7 +9,7 @@ export default function Kalendermq() {
         <iframe
           scrolling='no'
           allowtransparency='true'
-          frameborder='0'
+          frameBorder='0'
           width='100%'
           height='800'
           src='https://www.tradays.com/en/economic-calendar/widget?mode=2&amp;'

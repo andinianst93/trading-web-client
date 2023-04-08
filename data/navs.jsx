@@ -17,7 +17,6 @@ const navlink = [
           { name: 'Komoditas', link: '/komoditas' },
           { name: 'Indeks', link: '/indeks' },
           { name: 'Saham', link: '/saham' },
-          { name: 'Test', link: '/test' },
         ],
       },
     ],
@@ -51,7 +50,7 @@ const navlink = [
     ],
   },
   {
-    name: 'Akademi',
+    name: 'Edukasi',
     id: 3,
     icon: <SiHtmlacademy />,
     submenu: true,
@@ -60,9 +59,10 @@ const navlink = [
         head: 'Belajar Trading',
         id: 4,
         sublink: [
-          { name: 'Glosarium', link: '/glosarium' },
-          { name: 'Video', link: '/video-trading' },
+          { name: 'Artikel', link: '/artikel' },
           { name: 'Kelas', link: '/kelas-trading' },
+          { name: 'Video', link: '/video-trading' },
+          { name: 'Glosarium', link: '/glosarium' },
           { name: 'Ebook', link: '/ebook' },
           { name: 'Kalkulator', link: '/kalkulator' },
         ],
@@ -78,17 +78,15 @@ const navlink = [
       {
         head: 'Berita',
         id: 5,
-        sublink: [{ name: 'Analisa', link: '/berita-dan-analisa' }],
+        sublink: [
+          { name: 'Berita', link: '/berita' },
+          { name: 'Analisa', link: '/analisa' },
+        ],
       },
       {
         head: 'Market Update',
         id: 6,
         sublink: [{ name: 'Kalender Ekonomi', link: '/kalender-ekonomi' }],
-      },
-      {
-        head: 'Blog',
-        id: 7,
-        sublink: [{ name: 'Blog', link: '/blog' }],
       },
     ],
   },

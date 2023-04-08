@@ -7,11 +7,11 @@ const footer = [
       {
         Head: 'Quick Links',
         sublink: [
-          { id: 1, name: 'Tentang', link: '/tentang-kami' },
+          { id: 1, name: 'Tentang Kami', link: '/tentang-kami' },
           { id: 2, name: 'Hubungi Kami', link: '/hubungi-kami' },
-          { id: 3, name: 'Web', link: '/web' },
+          { id: 3, name: 'Web Trading', link: '/web' },
           { id: 4, name: 'Aplikasi Trading', link: '/aplikasi' },
-          { id: 5, name: 'Blog', link: '/blog' },
+          { id: 5, name: 'Artikel', link: '/artikel' },
         ],
       },
     ],

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Container from '@/components/layout/container'
 import HeroPage from '@/components/HeroPage'
-import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import { fetchAPI } from '@/config'
 import Select from 'react-select'
@@ -13,7 +12,6 @@ const Test = ({ glosari }) => {
   }
   return (
     <Container>
-      {' '}
       <div className='overflow-x-hidden '>
         <div className='bg-black bg-[url(/images/banner-bg.png)]'>
           <nav className='bg-black'>

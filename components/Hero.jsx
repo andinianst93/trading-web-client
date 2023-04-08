@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 const Hero = () => {
   return (
-    <section className='bg-black bg-[url(/images/banner-bg.png)] py-[82px] sm:-mx-[250px] lg:rounded-b-[50%] lg:-mx-[150px] lg:py-[106px]'>
+    <section className='bg-black bg-[url(/images/banner-bg.png)] py-[82px] sm:-mx-[250px]  lg:-mx-[150px] lg:py-[106px]'>
       <div className='container'>
         <div className='relative z-[1] text-white lg:w-3/5 xl:w-1/2 mx-auto flex flex-col justify-center items-center'>
           <h1 className='text-[50px] text-center leading-none font-extrabold lg:text-[60px] lg:leading-[90px]'>
-            <span className='text-[#f1d0a9]'>Trading Forex Praktis, </span>
-            <span className='text-[#47cffc]'>Anti Ribet</span>
+            <span className='text-[#ffffff]'>Trading Forex Praktis, </span>
+            <span className='text-[#ffffff]'>Anti Ribet</span>
           </h1>
           <p className='my-8 text-lg lg:w-3/4 text-center'>
             Bergabunglah dengan ribuan trader sukses yang telah memilih kami
