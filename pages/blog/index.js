@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Container from '@/components/layout/container'
 import Breadcrumb from '@/components/Breadcrumb'
+import BlogCardIndex from '@/components/BlogCardIndex'
 import SearchBlog from '@/components/SearchBlog'
 import Pagination from '@/components/Pagination'
 import { fetchAPI } from '@/config'
@@ -9,31 +10,43 @@ import { paginate } from '@/components/Paginate'
 import TopBlog from '@/components/TopBlog'
 import Link from 'next/link'
 import Cta from '@/components/Cta'
-import BeritaCards from '@/components/BeritaCards'
-const AnalisaIndex = ({ beritas }) => {
+const BlogIndex = ({ articles, categories }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 10
   const onPageChange = (page) => {
     setCurrentPage(page)
   }
-  const paginatedPosts = paginate(beritas, currentPage, pageSize)
+  const paginatedPosts = paginate(articles, currentPage, pageSize)
 
   return (
     <Container>
       <div className='overflow-x-hidden '>
         <div className='bg-black bg-[url(/images/banner-bg.png)]'>
           <nav className='bg-black'>
-            <Breadcrumb title1='Analisa' />
+            <Breadcrumb title1='Blog' />
           </nav>
-          <HeroPage
-            title='Analisa'
-            desc='Analisa forex terbaru yang mencakup analisa harian dan mingguan, serta peluang trading forex (volatilitas pasar, kondisi pasar, dan pemantauan berita). Tak hanya forex, ada juga analisa harian tentang emas, saham, index, dan minyak.'
-          />
+          <HeroPage title='Blog' />
         </div>
         <section className='text-black py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6'>
           <div className='container'>
-            <div className='md:flex md:items-center md:justify-between'>
-              {/* search box */}
+            <div>
+              <div className='md:flex md:items-center md:justify-between'>
+                <h2 className='text-xl font-bold mb-4'>Kategori</h2>
+                <SearchBlog />
+              </div>
+              <div className='grid grid-cols-2 lg:grid-cols-5 gap-x-2 gap-y-2 mt-4'>
+                {categories.map((i) => {
+                  return (
+                    <Link
+                      href={`/blog/${i.attributes.slug}`}
+                      key={i.id}
+                      className='text-black bg-white border-[0.5px] focus:ring-4 capitalize focus:outline-none focus:ring-blue-one rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-semibold'
+                    >
+                      <h3>{i.attributes.title}</h3>
+                    </Link>
+                  )
+                })}
+              </div>
             </div>
           </div>
 
@@ -42,11 +55,11 @@ const AnalisaIndex = ({ beritas }) => {
           <div className='lg:grid lg:grid-flow-col'>
             <div className='border-r-[0.2px] border-gray-three'>
               <h2 className='text-xl font-bold mb-4 mt-8 mx-4'>
-                Analisa Forex Terbaru
+                Artikel Terbaru
               </h2>
               <div className='grid gap-8 lg:grid-cols-2 '>
                 {paginatedPosts.map((a) => {
-                  return <BeritaCards key={a.id} a={a} />
+                  return <BlogCardIndex key={a.id} a={a} />
                 })}
               </div>
             </div>
@@ -54,20 +67,20 @@ const AnalisaIndex = ({ beritas }) => {
               <h2 className='lg:text-lg lg:ml-4 lg:font-bold lg:block hidden '>
                 Top Posts
               </h2>
-              {beritas.map((a) => {
+              {articles.map((a) => {
                 return <TopBlog key={a.id} a={a} />
               })}
             </div>
           </div>
 
-          <section className='flex mt-8 justify-center items-center'>
+          <div className='flex mt-8 justify-center items-center'>
             <Pagination
-              items={beritas.length}
+              items={articles.length}
               currentPage={currentPage}
               pageSize={pageSize}
               onPageChange={onPageChange}
             />
-          </section>
+          </div>
         </section>
         <Cta />
       </div>
@@ -76,16 +89,19 @@ const AnalisaIndex = ({ beritas }) => {
 }
 
 export async function getStaticProps() {
-  const beritaRes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/beritas?populate=*&sort[0]=updatedAt%3Adesc&filters[navigation][title][$eqi]=analisa`
+  const articlesRes = await fetchAPI(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc`
   )
-
+  const categoriesRes = await fetchAPI(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/categories`
+  )
   return {
     props: {
-      beritas: beritaRes.data,
+      articles: articlesRes.data,
+      categories: categoriesRes.data,
     },
     revalidate: 1,
   }
 }
 
-export default AnalisaIndex
+export default BlogIndex

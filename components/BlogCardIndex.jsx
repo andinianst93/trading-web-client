@@ -23,7 +23,7 @@ const BlogCardIndex = ({ a }) => {
 
       <h3 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
         <Link
-          href={`/artikel/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
+          href={`/blog/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
         >
           {a.attributes.title}
         </Link>
@@ -34,7 +34,7 @@ const BlogCardIndex = ({ a }) => {
       <div className='flex justify-between items-center'>
         <p>{a.attributes.author.data.attributes.name}</p>
         <Link
-          href={`/artikel/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
+          href={`/blog/${a.attributes.category.data?.attributes.slug}/${a.attributes.slug}`}
           className='inline-flex items-center font-medium text-primary-600 hover:underline'
         >
           Read more

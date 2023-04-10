@@ -5,7 +5,7 @@ const SearchBlog = () => {
   const router = useRouter()
   const handleSubmit = (e) => {
     e.preventDefault()
-    router.push(`/artikel/search?term=${term}`)
+    router.push(`/blog/search?term=${term}`)
     setTerm()
   }
   return (

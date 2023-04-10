@@ -8,7 +8,7 @@ const TopBlog = ({ a }) => {
           <div className='flex flex-col rounded-lg bg-white md:max-w-md md:flex-row mb-2'>
             <div className='flex flex-col justify-start px-6 py-2'>
               <Link
-                href={`/artikel/${a.attributes.category.data.attributes.slug}/${a.attributes.slug}`}
+                href={`/blog/${a.attributes.category.data.attributes.slug}/${a.attributes.slug}`}
                 className='hover:text-blue'
               >
                 <h3 className='text-sm font-medium line-clamp-3'>

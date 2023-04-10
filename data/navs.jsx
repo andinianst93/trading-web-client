@@ -59,9 +59,9 @@ const navlink = [
         head: 'Belajar Trading',
         id: 4,
         sublink: [
-          { name: 'Artikel', link: '/artikel' },
-          { name: 'Kelas', link: '/kelas-trading' },
-          { name: 'Video', link: '/video-trading' },
+          { name: 'Blog', link: '/blog' },
+          { name: 'Tutorial Aplikasi', link: '/tutorial' },
+          { name: 'Video Trading', link: '/video' },
           { name: 'Glosarium', link: '/glosarium' },
           { name: 'Ebook', link: '/ebook' },
           { name: 'Kalkulator', link: '/kalkulator' },

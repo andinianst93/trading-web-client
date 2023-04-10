@@ -25,7 +25,10 @@ const BeritaIndex = ({ beritas }) => {
           <nav className='bg-black'>
             <Breadcrumb title1='Berita' />
           </nav>
-          <HeroPage title='Berita' />
+          <HeroPage
+            title='Berita'
+            desc='Berita terkait pasar forex termasuk berita ekonomi dan kebijakan pemerintah yang mempengaruhi nilai mata uang. Termasuk update terbaru kebijakan moneter dan fiskal, perkembangan ekonomi global, peristiwa geopolitik, dan data makroekonomi.'
+          />
         </div>
         <section className='text-black py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6'>
           <div className='container'>
