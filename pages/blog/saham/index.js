@@ -22,7 +22,7 @@ const SahamIndex = ({ articles, categories }) => {
       <div className='overflow-x-hidden '>
         <div className='bg-black bg-[url(/images/banner-bg.png)]'>
           <nav className='bg-black'>
-            <Breadcrumb3 title1='Artikel' slug='artikel' title2='Saham' />
+            <Breadcrumb3 title1='Blog' slug='blog' title2='Saham' />
           </nav>
           <HeroPage title='Saham' />
         </div>
