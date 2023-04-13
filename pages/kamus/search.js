@@ -11,10 +11,10 @@ const GlosariIndexSearch = ({ glosariums }) => {
     <Container>
       <main className='pt-[2rem] md:px-48'>
         <Link
-          href='/glosarium'
+          href='/kamus'
           className='text-black hover:text-blue-dark font-bold flex items-center mb-4'
         >
-          <MdKeyboardArrowLeft className='mr-2' /> Back To Glosarium
+          <MdKeyboardArrowLeft className='mr-2' /> Kembali ke Kamus
         </Link>
         <h1>Search Results for {router.query.term}</h1>
         {glosariums.length === 0 && (

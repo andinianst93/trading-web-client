@@ -11,10 +11,10 @@ const ArtikelIndexSearch = ({ articles }) => {
     <Container>
       <main className='pt-[2rem] md:px-48'>
         <Link
-          href='/artikel'
+          href='/blog'
           className='text-black hover:text-blue-dark font-bold flex items-center mb-4'
         >
-          <MdKeyboardArrowLeft className='mr-2' /> Kembali ke Artikel
+          <MdKeyboardArrowLeft className='mr-2' /> Kembali ke Blog
         </Link>
         <h1>Hasil pencarian {router.query.term}</h1>
         {articles.length === 0 && (
