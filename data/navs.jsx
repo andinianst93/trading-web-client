@@ -61,8 +61,8 @@ const navlink = [
         sublink: [
           { name: 'Blog', link: '/blog' },
           { name: 'Tutorial Aplikasi', link: '/tutorial' },
-          { name: 'Video Trading', link: '/video' },
-          { name: 'Glosarium', link: '/glosarium' },
+          { name: 'Panduan Trading', link: '/panduan-trading' },
+          { name: 'Kamus', link: '/kamus' },
           { name: 'Ebook', link: '/ebook' },
           { name: 'Kalkulator', link: '/kalkulator' },
         ],

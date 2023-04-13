@@ -16,9 +16,9 @@ const GlosariBSingle = ({ glosariBRes, glosariRel }) => {
       <div>
         <div>
           <Breadcrumb6
-            title1='Glosarium'
+            title1='Kamus'
             title2='C'
-            slug='glosarium'
+            slug='kamus'
             slug2='c'
             title3={title}
           />

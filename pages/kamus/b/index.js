@@ -5,12 +5,12 @@ import Breadcrumb3 from '@/components/Breadcrumb3'
 import GlosariSearch from '@/components/glosarisearch'
 import { fetchAPI } from '../../../config/index'
 import Cta from '@/components/Cta'
-const GlosariumC = ({ glosariA }) => {
+const GlosariumB = ({ glosariA }) => {
   return (
     <Container>
       <div className='overflow-x-hidden '>
         <nav className='bg-black'>
-          <Breadcrumb3 title1='Glosarium' title2='C' slug='glosarium' />
+          <Breadcrumb3 title1='Kamus' title2='B' slug='kamus' />
         </nav>
         <div className='container mx-auto'>
           <div className='flex justify-center items-center'>
@@ -32,11 +32,10 @@ const GlosariumC = ({ glosariA }) => {
                   <div className='container grid lg:grid-cols-4'>
                     {' '}
                     {a.attributes.glosariums.data.map((item, index) => {
-                      console.log(item)
                       return (
                         <article className='my-2' key={index}>
                           <Link
-                            href={`/glosarium/c/${item.attributes.slug}`}
+                            href={`/glosarium/b/${item.attributes.slug}`}
                             className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
                           >
                             <div className='flex flex-col justify-between leading-normal'>
@@ -61,7 +60,7 @@ const GlosariumC = ({ glosariA }) => {
 }
 export async function getStaticProps() {
   const glosariARes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/letters?populate=*&filters[alphabet][$contains]=c`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/letters?populate=*&filters[alphabet][$contains]=b`
   )
   return {
     props: {
@@ -71,4 +70,4 @@ export async function getStaticProps() {
   }
 }
 
-export default GlosariumC
+export default GlosariumB

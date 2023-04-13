@@ -12,7 +12,7 @@ const GlosariInfo = ({ glosaricat }) => {
           return (
             <article key={index} className='my-2'>
               <Link
-                href={`/glosarium/${alphabet}/${slug}`}
+                href={`/kamus/${alphabet}/${slug}`}
                 className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
               >
                 <div className='flex flex-col justify-between leading-normal'>

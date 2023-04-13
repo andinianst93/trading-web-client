@@ -11,7 +11,7 @@ const Glosarium = ({ glosariA }) => {
     <Container>
       <div className='overflow-x-hidden '>
         <nav className='bg-black'>
-          <Breadcrumb3 title1='Glosarium' title2='A' slug='glosarium' />
+          <Breadcrumb3 title1='Kamus' title2='A' slug='kamus' />
         </nav>
         <div className='container mx-auto'>
           <div className='flex justify-center items-center'>

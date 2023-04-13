@@ -5,7 +5,7 @@ const GlosariSearch = () => {
   const router = useRouter()
   const handleSubmit = (e) => {
     e.preventDefault()
-    router.push(`/glosarium/search?term=${term}`)
+    router.push(`/kamus/search?term=${term}`)
     setTerm()
   }
   return (

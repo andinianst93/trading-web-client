@@ -11,7 +11,7 @@ const footer = [
           { id: 2, name: 'Hubungi Kami', link: '/hubungi-kami' },
           { id: 3, name: 'Web Trading', link: '/web' },
           { id: 4, name: 'Aplikasi Trading', link: '/aplikasi' },
-          { id: 5, name: 'Artikel', link: '/artikel' },
+          { id: 5, name: 'Panduan Trading', link: '/panduan-trading' },
         ],
       },
     ],

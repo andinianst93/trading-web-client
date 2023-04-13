@@ -8,18 +8,18 @@ import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
 import Cta from '@/components/Cta'
 import RelatedGlo from '@/components/RelatedGlo'
-const GlosariBSingle = ({ glosariBRes, glosariRel }) => {
-  const glosariB = glosariBRes.map((x) => x.attributes)
-  const [{ title, description, body }] = glosariB
+const GlosariA = ({ glosariARes, glosariRel }) => {
+  const glosariA = glosariARes.map((x) => x.attributes)
+  const [{ title, description, body }] = glosariA
   return (
     <Container>
       <div>
         <div>
           <Breadcrumb6
-            title1='Glosarium'
-            title2='B'
-            slug='glosarium'
-            slug2='b'
+            title1='Kamus'
+            title2='A'
+            slug='kamus'
+            slug2='a'
             title3={title}
           />
         </div>
@@ -31,7 +31,7 @@ const GlosariBSingle = ({ glosariBRes, glosariRel }) => {
                   {title}
                 </h1>
               </header>
-              <div className='mt-4 prose max-w-none leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
+              <div className='mt-4 prose max-w-3xl leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
                 <ReactMarkdown
                   remarkPlugins={[remarkBreaks]}
                   className='hyperlink'
@@ -61,11 +61,11 @@ export async function getServerSideProps({ params }) {
     `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[slug][$eq]=${slug}`
   )
   const glosariRel = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[letter][alphabet][$eqi]=b`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/glosariums?populate=*&filters[letter][alphabet][$eqi]=a`
   )
   return {
-    props: { glosariBRes: glosariARes.data, glosariRel: glosariRel.data },
+    props: { glosariARes: glosariARes.data, glosariRel: glosariRel.data },
   }
 }
 
-export default GlosariBSingle
+export default GlosariA

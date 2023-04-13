@@ -39,7 +39,7 @@ const Breadcrumb6 = ({ title1, slug, title2, title3, slug2 }) => {
               </svg>
               <p className='ml-1 text-sm font-medium text-black hover:text-blue-600 md:ml-2'>
                 <Link
-                  href={`/glosarium`}
+                  href={`/kamus`}
                   className='inline-flex items-center text-sm font-medium text-black hover:text-blue-600'
                 >
                   {title1}
@@ -65,7 +65,7 @@ const Breadcrumb6 = ({ title1, slug, title2, title3, slug2 }) => {
 
               <p className='ml-1 text-sm font-medium text-black hover:text-blue-600 md:ml-2'>
                 <Link
-                  href={`/glosarium/${slug2}`}
+                  href={`/kamus/${slug2}`}
                   className='inline-flex items-center text-sm font-medium text-black hover:text-blue-600'
                 >
                   {title2}
