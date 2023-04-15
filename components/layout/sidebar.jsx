@@ -59,16 +59,16 @@ const Sidebar = () => {
       </ul>
       <div className='flex flex-col mb-8 text-center font-bold'>
         <Link
-          href='/buka-akun-demo'
+          href='/akun'
           className='bg-transparent text-black font-semibold py-2 px-4 border rounded my-4'
         >
-          Buka Akun Demo
+          Daftar
         </Link>
         <Link
-          href='/buka-akun-demo'
+          href='/akun'
           className='bg-black text-white font-semibold py-2 px-4 border rounded'
         >
-          Buka Akun Live
+          Masuk
         </Link>
       </div>
     </aside>
