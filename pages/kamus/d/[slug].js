@@ -19,7 +19,7 @@ const GlosariDSingle = ({ glosariBRes, glosariRel }) => {
             title1='Kamus'
             title2='D'
             slug='kamus'
-            slug2='D'
+            slug2='d'
             title3={title}
           />
         </div>
