@@ -5,7 +5,7 @@ import Breadcrumb3 from '@/components/Breadcrumb3'
 import GlosariSearch from '@/components/glosarisearch'
 import { fetchAPI } from '../../../config/index'
 import Cta from '@/components/Cta'
-const GlosariumC = ({ glosariA }) => {
+const GlosariumD = ({ glosariA }) => {
   return (
     <Container>
       <div className='overflow-x-hidden '>
@@ -36,7 +36,7 @@ const GlosariumC = ({ glosariA }) => {
                       return (
                         <article className='my-2' key={index}>
                           <Link
-                            href={`/kamus/c/${item.attributes.slug}`}
+                            href={`/kamus/d/${item.attributes.slug}`}
                             className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
                           >
                             <div className='flex flex-col justify-between leading-normal'>
@@ -61,7 +61,7 @@ const GlosariumC = ({ glosariA }) => {
 }
 export async function getStaticProps() {
   const glosariARes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/letters?populate=*&filters[alphabet][$contains]=c`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/letters?populate=*&filters[alphabet][$contains]=d`
   )
   return {
     props: {
@@ -71,4 +71,4 @@ export async function getStaticProps() {
   }
 }
 
-export default GlosariumC
+export default GlosariumD

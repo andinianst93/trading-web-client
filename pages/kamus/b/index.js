@@ -35,7 +35,7 @@ const GlosariumB = ({ glosariA }) => {
                       return (
                         <article className='my-2' key={index}>
                           <Link
-                            href={`/glosarium/b/${item.attributes.slug}`}
+                            href={`/kamus/b/${item.attributes.slug}`}
                             className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
                           >
                             <div className='flex flex-col justify-between leading-normal'>

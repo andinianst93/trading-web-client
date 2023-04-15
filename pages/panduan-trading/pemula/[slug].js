@@ -8,7 +8,7 @@ import { BsFillPlayCircleFill } from 'react-icons/bs'
 import Image from 'next/image'
 const PemulaSingle = () => {
   const art = pemula.map((x) => x)
-  const [{ name, description, category, image }] = art
+  const [{ name, description, category, image, catLink }] = art
   return (
     <Container>
       <div>
@@ -25,7 +25,7 @@ const PemulaSingle = () => {
             <div className='mx-auto w-full max-w-4xl'>
               <div>
                 <Link
-                  href={`/panduan-trading/pemula/${category}`}
+                  href={`/panduan-trading/pemula/${catLink}`}
                   className='text-base font-light capitalize text-gray-500 mb-2 hover:text-blue'
                 >
                   {category}
