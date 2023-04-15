@@ -25,7 +25,7 @@ const PemulaSingle = () => {
             <div className='mx-auto w-full max-w-4xl'>
               <div>
                 <Link
-                  href={`/panduan-trading/pemula/${catLink}`}
+                  href={`/panduan-trading/pemula`}
                   className='text-base font-light capitalize text-gray-500 mb-2 hover:text-blue'
                 >
                   {category}
