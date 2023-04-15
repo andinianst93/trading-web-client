@@ -8,7 +8,7 @@ const RelatedGloSingle = ({ a }) => {
     <article className='p-6 bg-white rounded-lg border border-gray-200 shadow-md'>
       <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
         <Link
-          href={`/glosarium/${a.attributes.letter.data.attributes.slug}/${a.attributes.slug}`}
+          href={`/kamus/${a.attributes.letter.data.attributes.slug}/${a.attributes.slug}`}
         >
           {a.attributes.title}
         </Link>
@@ -23,7 +23,7 @@ const RelatedGloSingle = ({ a }) => {
         {a.attributes.description}
       </p>
       <Link
-        href={`/glosarium/${a.attributes.letter.data.attributes.slug}/${a.attributes.slug}`}
+        href={`/kamus/${a.attributes.letter.data.attributes.slug}/${a.attributes.slug}`}
         className='text-blue-dark hover:underline'
       >
         Selengkapnya

@@ -7,7 +7,7 @@ const GlosariSearchResults = ({ a }) => {
       <div className='container grid lg:grid-cols-4'>
         <article key={a.id}>
           <Link
-            href={`/glosarium/a/${a.attributes.slug}`}
+            href={`/kamus/a/${a.attributes.slug}`}
             className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
           >
             <div className='flex flex-col justify-between leading-normal'>
