@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
+const Breadcrumb7 = ({ title1, slug, title2, title3, slug2 }) => {
   return (
-    <nav className='text-white pt-4 md:block hidden'>
-      <div className='container flex items-center justify-center'>
+    <nav className='text-black pt-4 lg:block hidden'>
+      <div className='mx-auto w-full max-w-4xl'>
         <ol className='inline-flex items-center space-x-1 md:space-x-3'>
           <li className='inline-flex items-center'>
             <Link
               href='/'
-              className='inline-flex items-center text-sm font-medium text-white hover:text-blue-600'
+              className='inline-flex items-center text-sm font-medium text-black hover:text-blue-600'
             >
               <svg
                 aria-hidden='true'
@@ -26,7 +26,7 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
             <div className='flex items-center'>
               <svg
                 aria-hidden='true'
-                className='w-6 h-6 text-white'
+                className='w-6 h-6 text-black'
                 fill='currentColor'
                 viewBox='0 0 20 20'
                 xmlns='http://www.w3.org/2000/svg'
@@ -37,10 +37,10 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
                   clipRule='evenodd'
                 ></path>
               </svg>
-              <p className='ml-1 text-sm font-medium text-white hover:text-blue-600 md:ml-2'>
+              <p className='ml-1 text-sm font-medium text-black hover:text-blue-600 md:ml-2'>
                 <Link
-                  href={`/${slug}`}
-                  className='inline-flex items-center text-sm font-medium text-white hover:text-blue-600'
+                  href={`/panduan-trading`}
+                  className='inline-flex items-center capitalize text-sm font-medium text-black hover:text-blue-600'
                 >
                   {title1}
                 </Link>
@@ -51,7 +51,7 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
             <div className='flex items-center'>
               <svg
                 aria-hidden='true'
-                className='w-6 h-6 text-white'
+                className='w-6 h-6 text-black'
                 fill='currentColor'
                 viewBox='0 0 20 20'
                 xmlns='http://www.w3.org/2000/svg'
@@ -63,10 +63,10 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
                 ></path>
               </svg>
 
-              <p className='ml-1 text-sm font-medium text-white hover:text-blue-600 md:ml-2'>
+              <p className='ml-1 text-sm font-medium text-black hover:text-blue-600 md:ml-2'>
                 <Link
-                  href={`/kamus/${slug2}`}
-                  className='inline-flex items-center text-sm font-medium text-white hover:text-blue-600'
+                  href={`/panduan-trading/${slug2}`}
+                  className='inline-flex items-center capitalize text-sm font-medium text-black hover:text-blue-600'
                 >
                   {title2}
                 </Link>
@@ -77,7 +77,7 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
             <div className='flex items-center'>
               <svg
                 aria-hidden='true'
-                className='w-6 h-6 text-white'
+                className='w-6 h-6 text-black'
                 fill='currentColor'
                 viewBox='0 0 20 20'
                 xmlns='http://www.w3.org/2000/svg'
@@ -88,7 +88,7 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
                   clipRule='evenodd'
                 ></path>
               </svg>
-              <p className='ml-1 text-sm font-medium text-white hover:text-blue-600 md:ml-2 capitalize'>
+              <p className='ml-1 text-sm font-medium text-black hover:text-blue-600 md:ml-2 capitalize'>
                 {title3}
               </p>
             </div>
@@ -99,4 +99,4 @@ const Breadcrumb4 = ({ title1, slug, title2, title3, slug2 }) => {
   )
 }
 
-export default Breadcrumb4
+export default Breadcrumb7

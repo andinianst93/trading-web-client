@@ -34,7 +34,7 @@ const Sublinks = () => {
             {item.submenu && (
               <div>
                 <div className='md:fixed md:top-18 md:hidden group-hover:md:block hover:md:block bg-white rounded-lg'>
-                  <div className='px-8 grid grid-cols-2 gap-x-4 mt-6 text-sm rounded-lg shadow-md'>
+                  <div className='px-8 grid grid-flow-col gap-x-16 mt-6 text-sm rounded-lg shadow-md'>
                     {item.sublinks.map((i, index) => {
                       return (
                         <div className='pb-2 md:pb-6 text-black' key={index}>

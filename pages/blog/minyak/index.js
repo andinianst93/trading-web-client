@@ -9,7 +9,7 @@ import HeroPage from '@/components/HeroPage'
 import { paginate } from '@/components/Paginate'
 import Link from 'next/link'
 import Cta from '@/components/Cta'
-const MinyakIndex = ({ articles, categories }) => {
+const SahamIndex = ({ articles, categories }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 10
   const onPageChange = (page) => {
@@ -69,4 +69,4 @@ export async function getStaticProps() {
   }
 }
 
-export default MinyakIndex
+export default SahamIndex

@@ -7,7 +7,7 @@ const video = [
       {
         id: 1,
         sublink: [
-          { name: 'Apa Itu Forex?', link: 'apa-itu-forex' },
+          { name: 'Mengenal Forex', link: 'mengenal-forex' },
           {
             name: 'Mengapa Pilih Trading Forex?',
             link: 'mengapa-pilih-trading-forex',

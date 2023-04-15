@@ -19,16 +19,16 @@ const Header = () => {
             <div className='flex items-center lg:order-2'>
               <div className='lg:flex lg:items-center hidden'>
                 <Link
-                  href='/buka-akun-demo'
+                  href='/akun'
                   className='bg-transparent text-white font-semibold py-2 px-4 border rounded lg:mr-3'
                 >
-                  Buka Akun Demo
+                  Daftar
                 </Link>
                 <Link
-                  href='/buka-akun-live'
+                  href='/akun'
                   className='bg-transparent text-white font-semibold py-2 px-4 border lg:mr-0'
                 >
-                  Buka Akun Live
+                  Masuk
                 </Link>
               </div>
               {/* humberger menu */}

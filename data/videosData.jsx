@@ -1,8 +1,8 @@
 const videos = [
   {
     id: 1,
-    name: 'Apa Itu Forex?',
-    link: 'apa-itu-forex',
+    name: 'Mengenal Forex',
+    link: 'mengenal-forex',
 
     image:
       'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',

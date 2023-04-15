@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '@/components/layout/container'
-const AkunDemo = () => {
+const Akun = () => {
   return (
     <Container>
       <div className='overflow-x-hidden'>
@@ -8,7 +8,7 @@ const AkunDemo = () => {
           <div className='container'>
             <div className='relative z-[1] text-white lg:w-3/5 xl:w-1/2 mx-auto flex flex-col justify-center items-center'>
               <h1 className='text-[50px] text-center leading-none font-extrabold lg:text-[60px] lg:leading-[90px]'>
-                <span className='text-[#ffffff]'>Akun Demo </span>
+                <span className='text-[#ffffff]'>Register/Login </span>
                 <span className='text-[#ffffff]'></span>
               </h1>
               <p className='my-8 text-lg lg:w-3/4 text-center'></p>
@@ -20,4 +20,4 @@ const AkunDemo = () => {
   )
 }
 
-export default AkunDemo
+export default Akun

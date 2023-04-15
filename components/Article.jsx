@@ -32,6 +32,7 @@ const Article = ({ articles }) => {
             <p className='mt-4'>{description}</p>
           </header>
           <Image
+            priority
             src={image.data.attributes.url}
             width={968}
             height={720}

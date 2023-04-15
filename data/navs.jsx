@@ -4,13 +4,13 @@ import { BiNews } from 'react-icons/bi'
 import { MdPeopleAlt } from 'react-icons/md'
 const navlink = [
   {
-    name: 'Market',
+    name: 'Produk',
     id: 1,
-    icon: <FcNeutralTrading />,
+    icon: <SiCoinmarketcap />,
     submenu: true,
     sublinks: [
       {
-        head: 'Market',
+        head: 'Instrumen',
         id: 1,
         sublink: [
           { name: 'Forex', link: '/forex' },
@@ -19,22 +19,14 @@ const navlink = [
           { name: 'Saham', link: '/saham' },
         ],
       },
-    ],
-  },
-  {
-    name: 'Produk',
-    id: 2,
-    icon: <SiCoinmarketcap />,
-    submenu: true,
-    sublinks: [
       {
-        head: 'Trading',
+        head: 'Informasi',
         id: 2,
         sublink: [
           { name: 'Jenis Akun', link: '/jenis-akun' },
-          { name: 'Akun Demo', link: '/akun-demo' },
-          { name: 'Deposit & Withdraw', link: '/deposit-withdraw' },
+          { name: 'Deposit & Penarikan', link: '/deposit-withdraw' },
           { name: 'Komisi & Spread', link: '/komisi-spread' },
+          { name: 'Kalkulator Profit', link: '/kalkulator' },
           { name: 'Promo', link: '/promo' },
         ],
       },
@@ -46,6 +38,28 @@ const navlink = [
           { name: 'Aplikasi', link: '/aplikasi' },
           { name: 'MetaTrader5', link: '/metatrader' },
         ],
+      },
+    ],
+  },
+
+  {
+    name: 'Berita dan Analisa',
+    id: 2,
+    icon: <BiNews />,
+    submenu: true,
+    sublinks: [
+      {
+        head: 'Berita',
+        id: 5,
+        sublink: [
+          { name: 'Berita', link: '/berita' },
+          { name: 'Analisa', link: '/analisa' },
+        ],
+      },
+      {
+        head: 'Market Update',
+        id: 6,
+        sublink: [{ name: 'Kalender Ekonomi', link: '/kalender-ekonomi' }],
       },
     ],
   },
@@ -64,29 +78,7 @@ const navlink = [
           { name: 'Panduan Trading', link: '/panduan-trading' },
           { name: 'Kamus', link: '/kamus' },
           { name: 'Ebook', link: '/ebook' },
-          { name: 'Kalkulator', link: '/kalkulator' },
         ],
-      },
-    ],
-  },
-  {
-    name: 'Berita dan Analisa',
-    id: 4,
-    icon: <BiNews />,
-    submenu: true,
-    sublinks: [
-      {
-        head: 'Berita',
-        id: 5,
-        sublink: [
-          { name: 'Berita', link: '/berita' },
-          { name: 'Analisa', link: '/analisa' },
-        ],
-      },
-      {
-        head: 'Market Update',
-        id: 6,
-        sublink: [{ name: 'Kalender Ekonomi', link: '/kalender-ekonomi' }],
       },
     ],
   },

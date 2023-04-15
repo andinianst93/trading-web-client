@@ -1,16 +1,8 @@
 const tutorial = [
   {
     id: 1,
-    name: 'Cara Membuat Akun Demo Forex',
+    name: 'Cara Daftar Akun Forex',
     link: '/cara-membuat-akun-demo-forex',
-    image:
-      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
-    category: 'pembukaan akun',
-  },
-  {
-    id: 2,
-    name: 'Cara Membuat Akun Real Forex',
-    link: '/cara-membuat-akun-real-forex',
     image:
       'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
     category: 'pembukaan akun',
@@ -61,20 +53,13 @@ const tutorial = [
   },
   {
     id: 8,
-    name: 'Cara Trading Forex dengan Akun Demo',
-    link: '/cara-trading-forex-dengan-akun-demo',
+    name: 'Memulai Trading Forex di XXX',
+    link: '/memulai-trading-forex',
     category: 'Cara Trading',
     image:
       'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
   },
-  {
-    id: 9,
-    name: 'Cara Trading Forex dengan Akun Real',
-    link: '/cara-trading-forex-dengan-akun-demo',
-    category: 'Cara Trading',
-    image:
-      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
-  },
+
   {
     id: 10,
     name: 'Fitur-Fitur Trading di XXX',

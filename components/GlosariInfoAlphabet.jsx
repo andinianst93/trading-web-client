@@ -9,7 +9,7 @@ const GlosariInfoAlphabet = ({ a }) => {
           return (
             <article className='my-2' key={item.id}>
               <Link
-                href={`/glosarium/a/${item.attributes.slug}`}
+                href={`/kamus/a/${item.attributes.slug}`}
                 className='bg-white  hover:text-[#0000FF] hover:underline w-[550px] flex'
               >
                 <div className='flex flex-col justify-between leading-normal'>

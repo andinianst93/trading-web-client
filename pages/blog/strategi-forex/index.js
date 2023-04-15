@@ -62,7 +62,7 @@ const BlogIndex = ({ articles, categories }) => {
 
 export async function getStaticProps() {
   const articlesRes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc&filters[category][title][$eqi]=strategi`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc&filters[category][title][$eqi]=strategi forex`
   )
   const categoriesRes = await fetchAPI(
     `${process.env.NEXT_PUBLIC_API_URL}/api/categories`

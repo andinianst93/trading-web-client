@@ -93,7 +93,7 @@ export async function getStaticProps() {
     `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc`
   )
   const categoriesRes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/categories`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/categories?sort[0]=title%3Aasc`
   )
   return {
     props: {

@@ -9,7 +9,7 @@ import HeroPage from '@/components/HeroPage'
 import { paginate } from '@/components/Paginate'
 import Link from 'next/link'
 import Cta from '@/components/Cta'
-const PsikologiTradingIndex = ({ articles, categories }) => {
+const UmumIndex = ({ articles, categories }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const pageSize = 10
   const onPageChange = (page) => {
@@ -22,12 +22,9 @@ const PsikologiTradingIndex = ({ articles, categories }) => {
       <div className='overflow-x-hidden '>
         <div className='bg-black bg-[url(/images/banner-bg.png)]'>
           <nav className='bg-black'>
-            <Breadcrumb3 title1='Blog' slug='blog' title2='Psikologi Trading' />
+            <Breadcrumb3 title1='Blog' slug='blog' title2='Umum' />
           </nav>
-          <HeroPage
-            title='Psikologi Trading'
-            desc='Membahas konsep psikologi trading seperti disiplin trading, manajemen risiko dan manajemen emosi. Dibahas juga stop loss, pengelolaan dana, leverage, pengelolaan emosi, faktor psikologis, dan kesalahan trading.'
-          />
+          <HeroPage title='Umum' />
         </div>
         <section className='text-black py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6'>
           <div className='container'>
@@ -58,7 +55,7 @@ const PsikologiTradingIndex = ({ articles, categories }) => {
 
 export async function getStaticProps() {
   const articlesRes = await fetchAPI(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc&filters[category][title][$eqi]=psikologi trading`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/articles?populate=*&sort[0]=updatedAt%3Adesc&filters[category][title][$eqi]=umum`
   )
   const categoriesRes = await fetchAPI(
     `${process.env.NEXT_PUBLIC_API_URL}/api/categories`
@@ -72,4 +69,4 @@ export async function getStaticProps() {
   }
 }
 
-export default PsikologiTradingIndex
+export default UmumIndex
