@@ -4,13 +4,13 @@ import { BiNews } from 'react-icons/bi'
 import { MdPeopleAlt } from 'react-icons/md'
 const navlink = [
   {
-    name: 'Produk',
+    name: 'Market',
     id: 1,
     icon: <SiCoinmarketcap />,
     submenu: true,
     sublinks: [
       {
-        head: 'Instrumen',
+        head: 'Market',
         id: 1,
         sublink: [
           { name: 'Forex', link: '/forex' },
@@ -19,9 +19,30 @@ const navlink = [
           { name: 'Saham', link: '/saham' },
         ],
       },
+    ],
+  },
+  {
+    name: 'Trading',
+    id: 1,
+    icon: <FcNeutralTrading />,
+    submenu: true,
+    sublinks: [
+      {
+        head: 'Produk Kami',
+        id: 3,
+        sublink: [
+          { name: 'Akun Demo', link: '/akun-demo' },
+          { name: 'Akun Live', link: '/akun-live' },
+        ],
+      },
+      {
+        head: 'Trader Pro',
+        id: 4,
+        sublink: [{ name: 'MT5 Akun Real', link: '/mt5-akun-real' }],
+      },
       {
         head: 'Informasi',
-        id: 2,
+        id: 5,
         sublink: [
           { name: 'Jenis Akun', link: '/jenis-akun' },
           { name: 'Deposit & Penarikan', link: '/deposit-withdraw' },
@@ -30,14 +51,36 @@ const navlink = [
           { name: 'Promo', link: '/promo' },
         ],
       },
+    ],
+  },
+  {
+    name: 'Platform',
+    id: 2,
+    icon: <SiCoinmarketcap />,
+    submenu: true,
+    sublinks: [
       {
-        head: 'Platform',
-        id: 3,
+        head: 'Platform Trading',
+        id: 1,
         sublink: [
-          { name: 'Web', link: '/web' },
-          { name: 'Aplikasi', link: '/aplikasi' },
-          { name: 'MetaTrader5', link: '/metatrader' },
+          { name: 'MetaTrader 5', link: '/metatrader-5' },
+          { name: 'Aplikasi Trading', link: '/aplikasi-trading' },
+          { name: 'Web Trading', link: '/web-trading' },
+          { name: 'Perbandingan', link: '/perbandingan' },
         ],
+      },
+    ],
+  },
+  {
+    name: 'Program IB',
+    id: 2,
+    icon: <SiCoinmarketcap />,
+    submenu: true,
+    sublinks: [
+      {
+        head: 'Informasi',
+        id: 9,
+        sublink: [{ name: 'Affiliate', link: '/affiliate' }],
       },
     ],
   },
@@ -97,11 +140,6 @@ const navlink = [
           { name: 'Press Room', link: '/press-room' },
           { name: 'Karir', link: '/karir' },
         ],
-      },
-      {
-        head: 'Partnership',
-        id: 9,
-        sublink: [{ name: 'Program Partnership', link: '/partnership' }],
       },
     ],
   },

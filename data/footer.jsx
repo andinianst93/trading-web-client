@@ -13,7 +13,6 @@ const footer = [
           { id: 4, name: 'Aplikasi Trading', link: '/aplikasi' },
           { id: 7, name: 'MetaTrader5', link: '/metatrader' },
           { id: 5, name: 'Panduan Trading', link: '/panduan-trading' },
-          { id: 6, name: 'Tutorial Aplikasi', link: '/tutorial' },
         ],
       },
     ],
