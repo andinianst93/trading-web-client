@@ -57,20 +57,6 @@ const Sidebar = () => {
           )
         })}
       </ul>
-      <div className='flex flex-col mb-8 text-center font-bold'>
-        <Link
-          href='/akun'
-          className='bg-transparent text-black font-semibold py-2 px-4 border rounded my-4'
-        >
-          Daftar
-        </Link>
-        <Link
-          href='/akun'
-          className='bg-black text-white font-semibold py-2 px-4 border rounded'
-        >
-          Masuk
-        </Link>
-      </div>
     </aside>
   )
 }

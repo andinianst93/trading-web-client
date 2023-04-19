@@ -32,6 +32,12 @@ const Header = () => {
                 </Link>
               </div>
               {/* humberger menu */}
+              <Link
+                href='/akun'
+                className='bg-black text-white font-semibold py-2 px-4 border rounded lg:hidden block'
+              >
+                Masuk
+              </Link>
               <button
                 type='button'
                 className='block items-center p-2 text-lg text-gray-400 bg-transparent rounded-lg lg:hidden'

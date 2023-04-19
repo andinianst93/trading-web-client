@@ -4,13 +4,13 @@ import { BiNews } from 'react-icons/bi'
 import { MdPeopleAlt } from 'react-icons/md'
 const navlink = [
   {
-    name: 'Market',
+    name: 'Produk',
     id: 1,
     icon: <SiCoinmarketcap />,
     submenu: true,
     sublinks: [
       {
-        head: 'Market',
+        head: 'Produk',
         id: 1,
         sublink: [
           { name: 'Forex', link: '/forex' },
@@ -28,23 +28,19 @@ const navlink = [
     submenu: true,
     sublinks: [
       {
-        head: 'Produk Kami',
+        head: 'Akun',
         id: 3,
         sublink: [
+          { name: 'Jenis Akun', link: '/jenis-akun' },
           { name: 'Akun Demo', link: '/akun-demo' },
           { name: 'Akun Live', link: '/akun-live' },
         ],
       },
-      {
-        head: 'Trader Pro',
-        id: 4,
-        sublink: [{ name: 'MT5 Akun Real', link: '/mt5-akun-real' }],
-      },
+
       {
         head: 'Informasi',
         id: 5,
         sublink: [
-          { name: 'Jenis Akun', link: '/jenis-akun' },
           { name: 'Deposit & Penarikan', link: '/deposit-withdraw' },
           { name: 'Komisi & Spread', link: '/komisi-spread' },
           { name: 'Kalkulator Profit', link: '/kalkulator' },
