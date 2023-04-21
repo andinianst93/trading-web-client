@@ -68,20 +68,6 @@ const navlink = [
     ],
   },
   {
-    name: 'Program IB',
-    id: 2,
-    icon: <SiCoinmarketcap />,
-    submenu: true,
-    sublinks: [
-      {
-        head: 'Informasi',
-        id: 9,
-        sublink: [{ name: 'Affiliate', link: '/affiliate' }],
-      },
-    ],
-  },
-
-  {
     name: 'Berita dan Analisa',
     id: 2,
     icon: <BiNews />,
