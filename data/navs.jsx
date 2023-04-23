@@ -59,7 +59,6 @@ const navlink = [
       },
     ],
   },
-
   {
     name: 'Berita dan Analisa',
     id: 2,
@@ -112,9 +111,9 @@ const navlink = [
         sublink: [
           { name: 'Tentang Kami', link: '/tentang-kami' },
           { name: 'Hubungi Kami', link: '/hubungi-kami' },
+          { name: 'Kemitraan', link: '/kemitraan' },
           { name: 'Press Room', link: '/press-room' },
           { name: 'Karir', link: '/karir' },
-          { name: 'partnership', link: '/partnership' },
         ],
       },
     ],
