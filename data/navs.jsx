@@ -101,13 +101,13 @@ const navlink = [
     ],
   },
   {
-    name: 'Perusahaan',
+    name: 'Tentang Kami',
     id: 5,
     icon: <MdPeopleAlt />,
     submenu: true,
     sublinks: [
       {
-        head: 'About',
+        head: 'Perusahaan',
         id: 8,
         sublink: [
           { name: 'Tentang Kami', link: '/tentang-kami' },
