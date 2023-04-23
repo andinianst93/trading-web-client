@@ -4,13 +4,13 @@ import { BiNews } from 'react-icons/bi'
 import { MdPeopleAlt } from 'react-icons/md'
 const navlink = [
   {
-    name: 'Produk',
+    name: 'Trading',
     id: 1,
-    icon: <SiCoinmarketcap />,
+    icon: <FcNeutralTrading />,
     submenu: true,
     sublinks: [
       {
-        head: 'Produk',
+        head: 'Market',
         id: 1,
         sublink: [
           { name: 'Forex', link: '/forex' },
@@ -19,14 +19,6 @@ const navlink = [
           { name: 'Saham', link: '/saham' },
         ],
       },
-    ],
-  },
-  {
-    name: 'Trading',
-    id: 1,
-    icon: <FcNeutralTrading />,
-    submenu: true,
-    sublinks: [
       {
         head: 'Akun',
         id: 3,
@@ -44,7 +36,7 @@ const navlink = [
           { name: 'Deposit & Penarikan', link: '/deposit-withdraw' },
           { name: 'Komisi & Spread', link: '/komisi-spread' },
           { name: 'Kalkulator Profit', link: '/kalkulator' },
-          { name: 'Promo', link: '/promo' },
+          { name: 'Promosi', link: '/promosi' },
         ],
       },
     ],
@@ -67,6 +59,7 @@ const navlink = [
       },
     ],
   },
+
   {
     name: 'Berita dan Analisa',
     id: 2,
@@ -74,7 +67,7 @@ const navlink = [
     submenu: true,
     sublinks: [
       {
-        head: 'Berita',
+        head: 'Berita dan Analisa',
         id: 5,
         sublink: [
           { name: 'Berita', link: '/berita' },
@@ -121,6 +114,7 @@ const navlink = [
           { name: 'Hubungi Kami', link: '/hubungi-kami' },
           { name: 'Press Room', link: '/press-room' },
           { name: 'Karir', link: '/karir' },
+          { name: 'partnership', link: '/partnership' },
         ],
       },
     ],

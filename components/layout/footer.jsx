@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <footer className='bg-white pb-10 pt-10 lg:pt-[50px]'>
         <div className='lg:px-12'>
-          <div className='grid gap-y-10 gap-x-4 sm:grid-cols-2 lg:grid-cols-4 px-6 lg:px-0'>
+          <div className='grid gap-y-10 gap-x-4 sm:grid-cols-2 lg:grid-cols-5 px-6 lg:px-0'>
             <div>
               <div className='text-3xl font-extrabold text-black w-auto mb-6'>
                 XXX
