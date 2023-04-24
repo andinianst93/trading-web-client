@@ -25,7 +25,7 @@ const navlink = [
         sublink: [
           { name: 'Jenis Akun', link: '/jenis-akun' },
           { name: 'Akun Demo', link: '/akun-demo' },
-          { name: 'Akun Live', link: '/akun-live' },
+          { name: 'Akun Real', link: '/akun-real' },
         ],
       },
 
