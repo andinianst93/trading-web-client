@@ -11,11 +11,17 @@ const Hero = () => {
             <h1 className='text-4xl font-medium tracking-tight text-black'>
               Platform Trading Web Based
             </h1>
-            <p className='mt-6 text-lg text-gray-two'>
+            <p className='mt-6 text-lg text-gray-two mb-4'>
               Trade anytime, anywhere with our web-based forex trading platform.
               Experience seamless trading on any device without the need for
               downloads.
             </p>
+            <button
+              type='button'
+              className='border border-gray-two focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-black dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+            >
+              Get Started
+            </button>
           </div>
           <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>
             <div className='-mx-4 px-9 sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32'>
