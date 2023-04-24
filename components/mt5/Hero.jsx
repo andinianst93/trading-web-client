@@ -18,10 +18,10 @@ const Hero = () => {
               your trading experience with ease.
             </p>
             <div className='flex mt-4'>
-              <AiFillApple className='w-8 h-8 text-gray-dark' />
-              <AiFillWindows className='w-8 h-8 text-black' />
-              <AiFillAndroid className='w-8 h-8 text-black' />
-              <IoLogoAppleAppstore className='w-8 h-8 text-black' />
+              <AiFillApple className='w-8 h-8 text-gray-two' />
+              <AiFillWindows className='w-8 h-8 text-gray-two' />
+              <AiFillAndroid className='w-8 h-8 text-gray-two' />
+              <IoLogoAppleAppstore className='w-8 h-8 text-gray-two' />
             </div>
           </div>
           <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>

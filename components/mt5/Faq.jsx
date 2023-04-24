@@ -3,60 +3,60 @@ import Link from 'next/link'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'What is MetaTrader 5?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'MetaTrader 5 is a popular trading platform used by traders to analyze financial markets, place orders, and manage their trading accounts.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'What are the main features of MetaTrader 5?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'The main features of MetaTrader 5 include advanced charting tools, multiple order types, automated trading through expert advisors, market depth analysis, and a wide range of technical indicators.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'Can I use MetaTrader 5 on my mobile device?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
-  ],
-  [
-    {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is XXX based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'Yes, MetaTrader 5 is available for both Android and iOS devices, allowing you to trade from anywhere at any time.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'Can I trade multiple assets on MetaTrader 5?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'Yes, you can trade a wide range of assets on MetaTrader 5, including forex, stocks, commodities, and cryptocurrencies.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'How do I open a trading account on MetaTrader 5?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'You can open a trading account on MetaTrader 5 through a licensed broker that supports the platform. Simply download and install the platform, select your broker, and follow the account opening instructions.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'How do I fund my trading account on MetaTrader 5?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'You can fund your trading account on MetaTrader 5 through various payment methods, including credit/debit cards, bank transfers, and e-wallets.',
+    },
+  ],
+  [
+    {
+      question: 'Can I customize the MetaTrader 5 interface?',
+      answer:
+        'Yes, MetaTrader 5 allows you to customize the interface to your preferences, including the color scheme, chart settings, and layout.',
+    },
+    {
+      question: 'What is the difference between MetaTrader 4 and MetaTrader 5?',
+      answer:
+        'MetaTrader 5 is the successor to MetaTrader 4, with improved features such as a more advanced trading system, enhanced charting tools, and multi-currency strategy tester.',
+    },
+    {
+      question: 'Can I use MetaTrader 5 for automated trading?',
+      answer:
+        'Yes, you can use MetaTrader 5 for automated trading by creating and running expert advisors (EAs) that execute trades based on pre-set criteria.',
     },
   ],
 ]
 
 const Faq = () => {
   return (
-    <section className='border-t border-gray-200 py-20 sm:py-32'>
+    <section className='border-t border-b border-gray-200 py-20 sm:py-32'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <h2
@@ -67,10 +67,7 @@ const Faq = () => {
           </h2>
           <p className='mt-2 text-lg text-gray-600'>
             If you have anything else you want to ask,{' '}
-            <Link
-              href='mailto:info@example.com'
-              className='text-gray-900 underline'
-            >
+            <Link href='/hubungi-kami' className='text-gray-900 underline'>
               reach out to us
             </Link>
             .
