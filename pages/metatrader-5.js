@@ -1,21 +1,20 @@
 import React from 'react'
 import Container from '@/components/layout/container'
+import Hero from '@/components/mt5/Hero'
+import KeyBenefits from '@/components/mt5/KeyBenefits'
+import SecondaryFeatures from '@/components/mt5/SecondaryFeatures'
+import Faq from '@/components/mt5/Faq'
+import Cta from '@/components/mt5/Cta'
 const mt = () => {
   return (
     <Container>
-      <div className='overflow-x-hidden'>
-        <section className='bg-black bg-[url(/images/banner-bg.png)] py-[82px] sm:-mx-[250px]  lg:-mx-[150px] lg:py-[106px]'>
-          <div className='container'>
-            <div className='relative z-[1] text-white lg:w-3/5 xl:w-1/2 mx-auto flex flex-col justify-center items-center'>
-              <h1 className='text-[50px] text-center leading-none font-extrabold lg:text-[60px] lg:leading-[90px]'>
-                <span className='text-[#ffffff]'>MT5 </span>
-                <span className='text-[#ffffff]'></span>
-              </h1>
-              <p className='my-8 text-lg lg:w-3/4 text-center'></p>
-            </div>
-          </div>
-        </section>
-      </div>
+      <main>
+        <Hero />
+        <KeyBenefits />
+        <SecondaryFeatures />
+        <Cta />
+        <Faq />
+      </main>
     </Container>
   )
 }

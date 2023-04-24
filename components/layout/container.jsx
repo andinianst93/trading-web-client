@@ -13,7 +13,7 @@ const Container = ({ title, description, children }) => {
       <div className='bg-white font-mulish w-full text-base text-gray antialiased'>
         <Header className='sticky-header' />
         <Sidebar />
-        <main>{children}</main>
+        <div>{children}</div>
         <Footer />
       </div>
     </>
