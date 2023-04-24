@@ -8,31 +8,31 @@ const faqs = [
         'Forex app trading is the process of buying and selling currencies on a mobile device using a dedicated trading app.',
     },
     {
-      question: 'What are the advantages of using a forex trading app?',
+      question: 'What are the advantages of using XXX forex trading app?',
       answer:
         'Forex trading apps offer several advantages, including the ability to trade on-the-go, real-time market data, and access to trading tools and resources.',
     },
     {
-      question: 'Is forex app trading safe and secure?',
+      question: 'Is XXX forex app trading safe and secure?',
       answer:
         'Yes, forex app trading can be safe and secure as long as you choose a reputable broker with strong security measures in place.',
     },
   ],
   [
     {
-      question: 'How do I download a forex trading app?',
+      question: 'How do I download XXX forex trading app?',
       answer:
         'You can download a forex trading app from your app store by searching for your brokers app or by visiting their website.',
     },
     {
       question:
-        'What are the minimum deposit requirements for forex web trading?',
+        'What are the minimum deposit requirements for XXX forex web trading?',
       answer:
         'Minimum deposit requirements for forex web trading vary by broker, but they typically range from $100 to $500.',
     },
     {
       question:
-        'What are the minimum deposit requirements for forex app trading?',
+        'What are the minimum deposit requirements for XXX forex app trading?',
       answer:
         'Minimum deposit requirements for forex app trading vary by broker, but they typically range from $100 to $500.',
     },
@@ -40,20 +40,20 @@ const faqs = [
   [
     {
       question:
-        'What trading tools and resources are available on a forex trading app?',
+        'What trading tools and resources are available on XXX forex trading app?',
       answer:
         'Yes, you can trade forex on a tablet or smartwatch using a forex trading app. Simply download the app on your device and start trading.',
     },
     {
       question:
-        'How can I make deposits and withdrawals on a forex trading app?',
+        'How can I make deposits and withdrawals on XXX forex trading app?',
       answer:
-        'You can make deposits and withdrawals on a forex trading app using a variety of payment methods, including credit/debit cards, bank transfers, and e-wallets.',
+        'You can make deposits and withdrawals on XXX forex trading app using a variety of payment methods, including credit/debit cards, bank transfers, and e-wallets.',
     },
     {
-      question: 'What are the trading hours for forex app trading?',
+      question: 'What are the trading hours for XXX forex app trading?',
       answer:
-        'Forex app trading is available 24 hours a day, 5 days a week, from Sunday evening to Friday evening (Eastern Standard Time).',
+        'XXX forex app trading is available 24 hours a day, 5 days a week, from Sunday evening to Friday evening (Eastern Standard Time).',
     },
   ],
 ]
