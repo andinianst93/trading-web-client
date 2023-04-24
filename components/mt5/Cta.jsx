@@ -22,10 +22,10 @@ const Cta = () => {
             analysis tools. Start trading with confidence today!
           </p>
           <div className='mt-8 flex justify-center '>
-            <AiFillApple />
-            <AiFillWindows />
-            <AiFillAndroid />
-            <IoLogoAppleAppstore />
+            <AiFillApple className='w-8 h-8' />
+            <AiFillWindows className='w-8 h-8' />
+            <AiFillAndroid className='w-8 h-8' />
+            <IoLogoAppleAppstore className='w-8 h-8' />
           </div>
         </div>
       </div>

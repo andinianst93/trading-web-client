@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import { AiFillApple, AiFillWindows, AiFillAndroid } from 'react-icons/ai'
+import { IoLogoAppleAppstore } from 'react-icons/io5'
 const Hero = () => {
   return (
     <div className='overflow-hidden py-12 lg:pb-32 xl:pb-36'>
@@ -15,6 +17,12 @@ const Hero = () => {
               versatile trading platform for traders of all levels. Customize
               your trading experience with ease.
             </p>
+            <div className='flex mt-4'>
+              <AiFillApple className='w-8 h-8 text-gray-dark' />
+              <AiFillWindows className='w-8 h-8 text-black' />
+              <AiFillAndroid className='w-8 h-8 text-black' />
+              <IoLogoAppleAppstore className='w-8 h-8 text-black' />
+            </div>
           </div>
           <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>
             <div className='-mx-4 px-9 sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32'>
