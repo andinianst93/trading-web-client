@@ -2,37 +2,37 @@ import React from 'react'
 import { MdWebAsset } from 'react-icons/md'
 const features = [
   {
-    name: 'Trade',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: <MdWebAsset className='w-8 h-8' />,
-  },
-  {
-    name: 'Balanced',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: <MdWebAsset className='w-8 h-8' />,
-  },
-  {
-    name: 'Trade in real-time',
+    name: 'Second Feature 1',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Profit ',
+    name: 'Second Feature 2',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'Second Feature 3',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Tracking',
+    name: 'Second Feature 4 ',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
+    icon: <MdWebAsset className='w-8 h-8' />,
+  },
+  {
+    name: 'Second Feature 5',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
+    icon: <MdWebAsset className='w-8 h-8' />,
+  },
+  {
+    name: 'Second Feature 6',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
@@ -44,7 +44,7 @@ const SecondaryFeatures = () => {
     <section className='py-20 sm:py-32'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl sm:text-center'>
-          <h2 className='text-3xl font-medium tracking-tight text-gray-900'>
+          <h2 className='text-3xl font-medium tracking-tight text-black'>
             Secondary Features
           </h2>
           <p className='mt-2 text-lg text-gray-600'>
@@ -59,10 +59,10 @@ const SecondaryFeatures = () => {
           {features.map((feature) => (
             <li
               key={feature.name}
-              className='rounded-2xl border border-gray-200 p-8'
+              className='rounded-2xl border border-gray-200 p-8 '
             >
               {feature.icon}
-              <h3 className='mt-6 font-semibold text-gray-900'>
+              <h3 className='mt-6 font-semibold text-black text-xl'>
                 {feature.name}
               </h3>
               <p className='mt-2 text-gray-700'>{feature.description}</p>

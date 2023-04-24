@@ -4,22 +4,22 @@ import { MdWebAsset } from 'react-icons/md'
 import Image from 'next/image'
 const features = [
   {
-    name: 'Features 1.',
+    name: 'Features 1',
     description:
       'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: <MdWebAsset />,
+    icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Features 2.',
+    name: 'Features 2',
     description:
       'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: <MdWebAsset />,
+    icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Features 3.',
+    name: 'Features 3',
     description:
       'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: <MdWebAsset />,
+    icon: <MdWebAsset className='w-8 h-8' />,
   },
 ]
 const KeyBenefits = () => {
@@ -39,10 +39,10 @@ const KeyBenefits = () => {
           </p>
         </div>
       </div>
-      <div className='mt-16'>
+      <div className='mt-4'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='mx-auto grid max-w-2xl grid-cols-1 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
-            <div className='lg:pt-14'>
+            <div className='lg:pt-[100px]'>
               <Image
                 src='https://res.cloudinary.com/andinianst93/image/upload/v1682347361/laptop-png-6759_jnb22q.png'
                 width={740}
@@ -52,12 +52,17 @@ const KeyBenefits = () => {
             </div>
             <div className='lg:pr-8 lg:pt-4'>
               <div className='lg:max-w-lg'>
-                <div className='mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-600 lg:max-w-none'>
+                <div className='mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-600 lg:max-w-none '>
                   {features.map((feature) => (
-                    <div key={feature.name} className='relative pl-9'>
-                      <h3 className='font-semibold text-gray-900 flex items-center'>
-                        <span className='pr-2'>{feature.icon}</span>
-                        <span> {feature.name}</span>
+                    <div
+                      key={feature.name}
+                      className='relative bg-gray-dark rounded-lg p-4'
+                    >
+                      <span>{feature.icon}</span>
+                      <h3 className='font-semibold text-gray-900 pt-2'>
+                        <span className='font-semibold text-xl text-white'>
+                          {feature.name}
+                        </span>
                       </h3>{' '}
                       <p className='inline'>{feature.description}</p>
                     </div>
