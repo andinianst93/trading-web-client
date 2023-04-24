@@ -2,37 +2,37 @@ import React from 'react'
 import { MdWebAsset } from 'react-icons/md'
 const features = [
   {
-    name: 'Market Depth Analysis',
+    name: 'Second Feature 1',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Hedging',
+    name: 'Second Feature 2',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Strategy Tester',
+    name: 'Second Feature 3',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Economic Calendar',
+    name: 'Second Feature 4 ',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Customizable Interface',
+    name: 'Second Feature 5',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Security',
+    name: 'Second Feature 6',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
     icon: <MdWebAsset className='w-8 h-8' />,

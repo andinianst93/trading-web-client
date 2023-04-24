@@ -37,9 +37,9 @@ const faqs = [
   ],
   [
     {
-      question: 'Can I customize the MetaTrader 5 interface?',
+      question: 'Where can I download MetaTrader 5?',
       answer:
-        'Yes, MetaTrader 5 allows you to customize the interface to your preferences, including the color scheme, chart settings, and layout.',
+        'You can download MetaTrader 5 from the official MetaQuotes website or through a licensed broker that supports the platform.',
     },
     {
       question: 'What is the difference between MetaTrader 4 and MetaTrader 5?',
@@ -47,9 +47,9 @@ const faqs = [
         'MetaTrader 5 is the successor to MetaTrader 4, with improved features such as a more advanced trading system, enhanced charting tools, and multi-currency strategy tester.',
     },
     {
-      question: 'Can I use MetaTrader 5 for automated trading?',
+      question: 'What are the system requirements for MetaTrader 5?',
       answer:
-        'Yes, you can use MetaTrader 5 for automated trading by creating and running expert advisors (EAs) that execute trades based on pre-set criteria.',
+        'The minimum system requirements for MetaTrader 5 are Windows 7 or later, 1GB of RAM, and 100MB of free disk space.',
     },
   ],
 ]

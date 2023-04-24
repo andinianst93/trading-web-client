@@ -12,22 +12,6 @@ const Footer = () => {
               <div className='text-3xl font-extrabold text-black w-auto mb-6'>
                 XXX
               </div>
-              <div>
-                <Image
-                  src='/images/appstore_footer.png'
-                  alt='download'
-                  width={320}
-                  height={150}
-                  className='mb-4 w-[125px]'
-                />
-                <Image
-                  src='/images/playstore_footer.png'
-                  width={320}
-                  height={150}
-                  alt='download'
-                  className='w-[125px] h-[40px] rounded-lg'
-                />
-              </div>
             </div>
             {footer.map((f) => {
               return (
