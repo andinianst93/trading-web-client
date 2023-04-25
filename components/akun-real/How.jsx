@@ -9,13 +9,13 @@ const features = [
     name: 'Go to the registration page',
     description:
       'Look for the "Open Account" or "Register" button on the homepage and click on it.',
-    icon: CloudArrowUpIcon,
+    icon: ServerIcon,
   },
   {
     name: 'Fill in your personal information',
     description:
       'Make sure you enter your information correctly, as it will be used to verify your identity later on.',
-    icon: LockClosedIcon,
+    icon: ServerIcon,
   },
   {
     name: 'Choose your account type',

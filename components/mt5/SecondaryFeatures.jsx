@@ -1,77 +1,80 @@
-import React from 'react'
-import { MdWebAsset } from 'react-icons/md'
+import {
+  CloudArrowUpIcon,
+  LockClosedIcon,
+  ServerIcon,
+  ChevronRightIcon,
+} from '@heroicons/react/20/solid'
+
 const features = [
   {
-    name: 'Market Depth Analysis',
+    name: 'Click on the "Download" button for MetaTrader 5',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
-    icon: <MdWebAsset className='w-8 h-8' />,
+      'Look for the "Open Account" or "Register" button on the homepage and click on it.',
+    icon: ChevronRightIcon,
   },
   {
-    name: 'Hedging',
+    name: 'Choose the version of MetaTrader 5 that is compatible with your operating system',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
-    icon: <MdWebAsset className='w-8 h-8' />,
+      'Make sure you enter your information correctly, as it will be used to verify your identity later on.',
+    icon: ChevronRightIcon,
   },
   {
-    name: 'Strategy Tester',
+    name: 'Once the download is complete, double-click on the downloaded file to begin the installation process.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
-    icon: <MdWebAsset className='w-8 h-8' />,
+      'Choose the account type that best suits your needs, whether it is a standard account, a mini account, or a VIP account.',
+    icon: ChevronRightIcon,
   },
   {
-    name: 'Economic Calendar',
+    name: 'Follow the instructions provided by the installation wizard to install MetaTrader 5 on your computer.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
-    icon: <MdWebAsset className='w-8 h-8' />,
+      'Once your identity has been verified, you will be ready to fund your account and start trading.',
+    icon: ChevronRightIcon,
   },
   {
-    name: 'Customizable Interface',
+    name: 'Launch MetaTrader 5 and log in with your account details to start trading',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
-    icon: <MdWebAsset className='w-8 h-8' />,
-  },
-  {
-    name: 'Security',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque.',
-    icon: <MdWebAsset className='w-8 h-8' />,
+      'Choose the method that works best for you and make your deposit. ',
+    icon: ChevronRightIcon,
   },
 ]
 
-const SecondaryFeatures = () => {
+export default function SecondaryFeatures() {
   return (
-    <section className='py-20 sm:py-32'>
-      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-        <div className='mx-auto max-w-2xl sm:text-center'>
-          <h2 className='text-3xl font-medium tracking-tight text-black'>
-            Secondary Features
-          </h2>
-          <p className='mt-2 text-lg text-gray-600'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque.
-          </p>
+    <div className='overflow-hidden bg-white py-24 sm:py-32'>
+      <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
+          <div className='lg:ml-auto lg:pt-4 lg:pl-4'>
+            <div className='lg:max-w-lg'>
+              <h2 className='mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl'>
+                How to install MetaTrader 5?
+              </h2>
+
+              <dl className='mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none'>
+                {features.map((feature) => (
+                  <div key={feature.name} className='relative pl-9'>
+                    <h3 className='inline font-semibold text-gray-900'>
+                      <feature.icon
+                        className='absolute top-1 left-1 h-5 w-5 text-indigo-600'
+                        aria-hidden='true'
+                      />
+                      {feature.name}
+                    </h3>{' '}
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+          <div className='flex items-start justify-end lg:order-first'>
+            <img
+              src='https://tailwindui.com/img/component-images/dark-project-app-screenshot.png'
+              alt='Product screenshot'
+              className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]'
+              width={2432}
+              height={1442}
+            />
+          </div>
         </div>
-        <ul
-          role='list'
-          className='mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3'
-        >
-          {features.map((feature) => (
-            <li
-              key={feature.name}
-              className='rounded-2xl border border-gray-200 p-8 '
-            >
-              {feature.icon}
-              <h3 className='mt-6 font-semibold text-black text-xl'>
-                {feature.name}
-              </h3>
-              <p className='mt-2 text-gray-700'>{feature.description}</p>
-            </li>
-          ))}
-        </ul>
       </div>
-    </section>
+    </div>
   )
 }
-
-export default SecondaryFeatures

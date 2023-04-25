@@ -11,7 +11,7 @@ const mt = () => {
       <main>
         <Hero />
         <KeyBenefits />
-        {/* <SecondaryFeatures /> */}
+        <SecondaryFeatures />
         <Cta />
         <Faq />
       </main>
