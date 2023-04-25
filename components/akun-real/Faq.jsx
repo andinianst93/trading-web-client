@@ -33,7 +33,7 @@ const faqs = [
     {
       question: 'Is forex trading risky?',
       answer:
-        'Yes, forex trading involves significant risk, and you should be aware of the risks before you start trading. You may lose some or all of your invested capital, and you should only trade with money that you can afford to lose. Be sure to educate yourself about the forex market, practice risk management, and use trading strategies to minimize your risks.',
+        'Yes, forex trading involves significant risk, and you should be aware of the risks before you start trading. Be sure to educate yourself about the forex market, practice risk management, and use trading strategies to minimize your risks.',
     },
   ],
   [
@@ -46,13 +46,13 @@ const faqs = [
       question:
         'What is the difference between a forex demo account and a forex real account?',
       answer:
-        'A forex demo account allows you to practice trading in a simulated trading environment using virtual money, whereas a forex real account allows you to trade with real money in the live forex market. While a demo account provides a risk-free way to practice trading and test out trading strategies, real accounts involve real money and real risks.',
+        'A forex demo account allows you to practice trading in a simulated trading environment using virtual money, whereas a forex real account allows you to trade with real money in the live forex market. ',
     },
     {
       question:
         'Can I switch from a forex demo account to a forex real account?',
       answer:
-        'Yes, you can switch from a forex demo account to a forex real account once you feel comfortable with your trading skills and strategies. To switch to a real account, you will need to open a new account with a forex broker, fill in your personal information, verify your identity, and fund your account with real money. Be sure to start with a small amount and use risk management strategies to minimize your risks as you start trading with real money.',
+        'Yes, you can switch from a forex demo account to a forex real account. To switch to a real account, you will need to open a new account with a forex broker, fill in your personal information, verify your identity, and fund your account with real money.',
     },
   ],
 ]
