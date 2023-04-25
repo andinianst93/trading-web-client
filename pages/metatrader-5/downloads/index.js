@@ -9,7 +9,6 @@ const mtdownload = () => {
       <main>
         <Hero />
         <Cta />
-        <KeyFeatures />
       </main>
     </Container>
   )
