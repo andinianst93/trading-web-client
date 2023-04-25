@@ -62,14 +62,14 @@ export default function KeyBenefits() {
           <dl className='col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16'>
             {features.map((feature) => (
               <div key={feature.name} className='relative pl-9'>
-                <dt className='font-semibold text-white'>
+                <h3 className='font-semibold text-white'>
                   <CheckIcon
                     className='absolute top-1 left-0 h-5 w-5 text-white'
                     aria-hidden='true'
                   />
                   {feature.name}
-                </dt>
-                <dd className='mt-2'>{feature.description}</dd>
+                </h3>
+                <p className='mt-2'>{feature.description}</p>
               </div>
             ))}
           </dl>
