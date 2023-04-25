@@ -2,6 +2,7 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  ChevronRightIcon,
 } from '@heroicons/react/20/solid'
 
 const features = [
@@ -9,31 +10,31 @@ const features = [
     name: 'Go to the registration page',
     description:
       'Look for the "Open Account" or "Register" button on the homepage and click on it.',
-    icon: ServerIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Fill in your personal information',
     description:
       'Make sure you enter your information correctly, as it will be used to verify your identity later on.',
-    icon: ServerIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Choose your account type',
     description:
       'Choose the account type that best suits your needs, whether it is a standard account, a mini account, or a VIP account.',
-    icon: ServerIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Verify your identity',
     description:
       'Once your identity has been verified, you will be ready to fund your account and start trading.',
-    icon: ServerIcon,
+    icon: ChevronRightIcon,
   },
   {
     name: 'Fund your account',
     description:
       'Choose the method that works best for you and make your deposit. ',
-    icon: ServerIcon,
+    icon: ChevronRightIcon,
   },
 ]
 
@@ -56,9 +57,9 @@ export default function How() {
                         className='absolute top-1 left-1 h-5 w-5 text-indigo-600'
                         aria-hidden='true'
                       />
-                      {feature.name}
+                      {feature.name}.
                     </h3>{' '}
-                    <dd className='inline'>{feature.description}</dd>
+                    <p className='inline'>{feature.description}</p>
                   </div>
                 ))}
               </dl>
