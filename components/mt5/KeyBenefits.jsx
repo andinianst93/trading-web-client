@@ -45,7 +45,7 @@ const KeyBenefits = () => {
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='max-w-2xl lg:text-left'>
           <h2 className='text-3xl font-medium tracking-tight text-white'>
-            Key Features of MetaTrader 5
+            Key Features
           </h2>
           <p className='mt-2 text-lg text-slate-six'>
             MetaTrader 5, or MT5, is one of the most popular and easily
