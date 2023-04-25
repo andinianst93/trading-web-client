@@ -11,7 +11,7 @@ const web = () => {
       <main>
         <Hero />
         <KeyBenefits />
-        <SecondaryFeatures />
+        {/* <SecondaryFeatures /> */}
         <Cta />
         <Faq />
       </main>

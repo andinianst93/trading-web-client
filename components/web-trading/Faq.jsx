@@ -61,7 +61,7 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <section className='border-t border-b border-gray-200 py-20 sm:py-32'>
+    <section className='border-b border-gray-200 py-20 sm:py-32'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:mx-0'>
           <h2
@@ -87,7 +87,7 @@ const Faq = () => {
               <ul role='list' className='space-y-10'>
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className='text-lg font-semibold leading-6 text-gray-900'>
+                    <h3 className='text-lg font-semibold leading-6 text-black'>
                       {faq.question}
                     </h3>
                     <p className='mt-4 text-sm text-gray-700'>{faq.answer}</p>

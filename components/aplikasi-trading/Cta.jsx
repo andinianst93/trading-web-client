@@ -1,33 +1,66 @@
-import React from 'react'
-import { CircleBackground } from '../CircleBackground'
-import { AiFillAndroid } from 'react-icons/ai'
-import { IoLogoAppleAppstore } from 'react-icons/io5'
-const Cta = () => {
+import { AiFillApple, AiFillAndroid } from 'react-icons/ai'
+import Image from 'next/image'
+export default function Example() {
   return (
-    <section
-      id='get-free-shares-today'
-      className='relative overflow-hidden bg-black py-20 sm:py-28'
-    >
-      <div className='absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2'>
-        <CircleBackground color='#fff' className='animate-spin-slower' />
-      </div>
-      <div className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-        <div className='mx-auto max-w-md sm:text-center'>
-          <h2 className='text-3xl font-medium tracking-tight text-white sm:text-4xl'>
-            Download now
+    <div className='bg-white'>
+      <div className='mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8'>
+        <div className='relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16'>
+          <h2 className='mx-auto max-w-2xl text-4xl font-bold tracking-tight text-black'>
+            Download Now
           </h2>
-          <p className='mt-4 text-lg text-gray-300 pb-6'>
-            Download our forex trading app today and experience seamless trading
-            on-the-go. Join now and start trading with confidence!"
+          <p className='mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-one'>
+            Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
+            anim id veniam aliqua proident excepteur commodo do ea.
           </p>
-          <div className='flex justify-center '>
-            <AiFillAndroid className='w-8 h-8' />
-            <IoLogoAppleAppstore className='w-8 h-8' />
+          <div className='mt-4 flex items-center justify-center'>
+            <a href='#'>
+              <Image
+                src='https://res.cloudinary.com/andinianst93/image/upload/v1682435431/5a902dbf7f96951c82922875_lr81xf.png'
+                alt=''
+                width={372}
+                height={50}
+                className='w-[150px]'
+              />
+            </a>
+            <a href='#'>
+              <Image
+                src='https://res.cloudinary.com/andinianst93/image/upload/v1682435391/5a902db97f96951c82922874_no078z.png'
+                alt=''
+                width={372}
+                height={50}
+                className='w-[120px]'
+              />
+            </a>
           </div>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 1024 1024'
+            className='absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2'
+            aria-hidden='true'
+          >
+            <circle
+              cx={512}
+              cy={512}
+              r={512}
+              fill='url(#827591b1-ce8c-4110-b064-7cb85a0b1217)'
+              fillOpacity='0.7'
+            />
+            <defs>
+              <radialGradient
+                id='827591b1-ce8c-4110-b064-7cb85a0b1217'
+                cx={0}
+                cy={0}
+                r={1}
+                gradientUnits='userSpaceOnUse'
+                gradientTransform='translate(512 512) rotate(90) scale(512)'
+              >
+                <stop stopColor='#7775D6' />
+                <stop offset={1} stopColor='#E935C1' stopOpacity={0} />
+              </radialGradient>
+            </defs>
+          </svg>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
-
-export default Cta
