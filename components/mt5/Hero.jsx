@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { AiFillApple, AiFillWindows, AiFillAndroid } from 'react-icons/ai'
 import { IoLogoAppleAppstore } from 'react-icons/io5'
+import Link from 'next/link'
 const Hero = () => {
   return (
     <div className='overflow-hidden py-12 lg:pb-32 xl:pb-36'>
@@ -18,10 +19,12 @@ const Hero = () => {
               your trading experience with ease.
             </p>
             <div className='flex mt-4'>
-              <AiFillApple className='w-8 h-8 text-gray-two' />
-              <AiFillWindows className='w-8 h-8 text-gray-two' />
-              <AiFillAndroid className='w-8 h-8 text-gray-two' />
-              <IoLogoAppleAppstore className='w-8 h-8 text-gray-two' />
+              <Link
+                href='/metatrader-5/downloads'
+                className='border border-gray-two focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-black dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
+              >
+                Download
+              </Link>
             </div>
           </div>
           <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>

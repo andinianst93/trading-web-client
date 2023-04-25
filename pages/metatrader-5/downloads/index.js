@@ -1,7 +1,18 @@
 import React from 'react'
-
-const index = () => {
-  return <div>index</div>
+import Container from '@/components/layout/container'
+import Cta from '@/components/downloadsMt5/Cta'
+import KeyFeatures from '@/components/downloadsMt5/KeyFeatures'
+import Hero from '@/components/downloadsMt5/Hero'
+const mtdownload = () => {
+  return (
+    <Container>
+      <main>
+        <Hero />
+        <Cta />
+        <KeyFeatures />
+      </main>
+    </Container>
+  )
 }
 
-export default index
+export default mtdownload
