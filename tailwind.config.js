@@ -40,6 +40,16 @@ module.exports = {
         two: '#808080	',
         three: '#D3D3D3',
       },
+      slate: {
+        DEFAULT: '#020617',
+        dark: '#0f172a',
+        one: '#1e293b',
+        two: '#334155',
+        three: '#475569',
+        four: '#64748b',
+        five: '#94a3b8',
+        six: '#cbd5e1',
+      },
     },
     extend: {
       typography: ({ theme }) => ({
