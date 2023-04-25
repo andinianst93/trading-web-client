@@ -82,7 +82,7 @@ const Faq = () => {
               <ul role='list' className='space-y-10'>
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className='text-lg font-semibold leading-6 text-gray-900'>
+                    <h3 className='text-lg font-semibold leading-6 text-black'>
                       {faq.question}
                     </h3>
                     <p className='mt-4 text-sm text-gray-700'>{faq.answer}</p>

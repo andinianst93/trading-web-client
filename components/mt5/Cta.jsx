@@ -2,6 +2,7 @@ import React from 'react'
 import { CircleBackground } from '../CircleBackground'
 import { AiFillApple, AiFillWindows, AiFillAndroid } from 'react-icons/ai'
 import { IoLogoAppleAppstore } from 'react-icons/io5'
+import { MdWebAsset } from 'react-icons/md'
 import Link from 'next/link'
 /* This example requires Tailwind CSS v3.0+ */
 export default function Cta() {
@@ -17,7 +18,7 @@ export default function Cta() {
             capabilities, and customizable analysis tools. Start trading with
             confidence today!
           </p>
-          <div className='mt-4 flex justify-center '>
+          <div className='mt-4 flex justify-center items-center'>
             <div className='flex mt-4'>
               <AiFillApple className='w-12 h-12' />
               <AiFillWindows className='w-12 h-12' />

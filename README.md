@@ -1,13 +1,12 @@
 1. List of keywords - Content brief.
 2. Platforms and the tutorial app.
-Ready to elevate your trading experience?
-Download MetaTrader 5 now and gain access to advanced trading features, multi-asset trading capabilities, and customizable analysis tools. Start trading with confidence today!
-
-   <div className='mt-8 flex justify-center '>
-            <div className='flex mt-4'>
-              <AiFillApple className='w-8 h-8' />
-              <AiFillWindows className='w-8 h-8' />
-              <AiFillAndroid className='w-8 h-8' />
-              <IoLogoAppleAppstore className='w-8 h-8' />
-            </div>
-          </div>
+   <h2 className='text-3xl font-medium tracking-tight text-white'>
+            Key Features
+          </h2>
+          <p className='mt-2 text-lg text-slate-six'>
+            MetaTrader 5, or MT5, is one of the most popular and easily
+            accessible trading platforms in the world, offering a multitude of
+            benefits for traders around the globe. You can utilize all the tools
+            and indicators and customize your trading experience. MT5 provides
+            everything you need to help you keep up with market.
+          </p>
