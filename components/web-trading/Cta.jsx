@@ -7,7 +7,7 @@ export default function Example() {
           <h2 className='mx-auto max-w-2xl text-4xl font-bold tracking-tight text-black'>
             Join Now and Start Trading!
           </h2>
-          <p className='mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300'>
+          <p className='mx-auto mt-6 max-w-xl text-lg leading-8 text-slate-two'>
             Experience the power of our web trading platform today. Sign up now
             and start trading with ease and confidence!
           </p>
@@ -16,7 +16,7 @@ export default function Example() {
               href='#'
               className='rounded-md bg-black px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'
             >
-              Start Trading
+              Mulai Trading
             </a>
           </div>
           <svg
