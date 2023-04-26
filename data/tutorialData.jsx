@@ -1,21 +1,69 @@
 const tutorial = [
   {
+    id: 3,
+    name: 'Cara Instal MetaTrader 5 di PC',
+    link: '/cara-instal-metatrader-5-pc',
+    category: 'panduan instalasi',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+  },
+  {
+    id: 12,
+    name: 'Cara Instal MetaTrader 5 di Android',
+    link: '/cara-instal-metatrader-5-android',
+    category: 'panduan instalasi',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+  },
+  {
+    id: 13,
+    name: 'Cara Instal MetaTrader 5 di iOS',
+    link: '/cara-instal-metatrader-5-ios',
+    category: 'panduan instalasi',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+  },
+  {
+    id: 14,
+    name: 'Cara Uninstall MetaTrader 5',
+    link: '/cara-uninstall-metatrader-5',
+    category: 'panduan instalasi',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+  },
+  {
     id: 1,
-    name: 'Cara Daftar Akun Forex',
-    link: '/cara-membuat-akun-demo-forex',
+    name: 'Cara Daftar Akun Demo',
+    link: '/cara-daftar-akun-demo',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+    category: 'pembukaan akun',
+  },
+  {
+    id: 16,
+    name: 'Cara Daftar Akun Real',
+    link: '/cara-daftar-akun-real',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+    category: 'pembukaan akun',
+  },
+  {
+    id: 15,
+    name: 'Cara Verifikasi Akun',
+    link: '/cara-verifikasi-akun',
+    image:
+      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
+    category: 'pembukaan akun',
+  },
+  {
+    id: 17,
+    name: 'Cara Login ke Akun Forex',
+    link: '/cara-login-akun-forex',
     image:
       'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
     category: 'pembukaan akun',
   },
 
-  {
-    id: 3,
-    name: 'Panduan Cara Trading Menggunakan Signal Forex',
-    link: '/panduan-cara-trading-menggunakan-signal-forex',
-    category: 'Trading Tools',
-    image:
-      'https://res.cloudinary.com/andinianst93/image/upload/v1681078364/banner_524712e36e.jpg',
-  },
   {
     id: 4,
     name: 'Mengelola Akun di Aplikasi XXX',
