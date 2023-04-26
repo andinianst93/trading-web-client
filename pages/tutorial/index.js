@@ -55,7 +55,9 @@ const Tutorial = () => {
                     <span className='capitalize'>{i.category}</span>
                   </div>
                   <h2 className='mb-2 text-xl font-bold tracking-tight text-gray-900'>
-                    <Link href={`/tutorial${i.link}`}>{i.name}</Link>
+                    <Link href={`/tutorial/panduan-instalasi/${i.link}`}>
+                      {i.name}
+                    </Link>
                   </h2>
                 </div>
               )
