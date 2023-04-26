@@ -45,7 +45,7 @@ export default function Key() {
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl sm:text-center'>
           <h2 className='mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl'>
-            Key Features
+            Why trade with us?
           </h2>
           <p className='mt-6 text-lg leading-8 text-gray-300'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
