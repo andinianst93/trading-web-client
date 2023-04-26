@@ -11,7 +11,7 @@ const Sidebar = () => {
     <aside
       className={
         isSidebarOpen
-          ? 'fixed z-10 left-0 top-0 w-full mx-auto h-full border-r px-6 pt-4 border-r-slate-900 bg-white ease-in duration-300 lg:hidden overflow-y-auto'
+          ? 'fixed z-20 left-0 top-0 w-full mx-auto h-full border-r px-6 pt-4 border-r-slate-900 bg-white ease-in duration-300 lg:hidden overflow-y-auto'
           : 'ease-out duration-300 fixed left-[-100%]'
       }
     >

@@ -36,7 +36,7 @@ const Header = () => {
                 href='/akun'
                 className='bg-black text-white font-semibold py-2 px-4 border rounded lg:hidden block'
               >
-                Masuk
+                Mulai Trading
               </Link>
               <button
                 type='button'
@@ -54,7 +54,7 @@ const Header = () => {
                 </svg>
               </button>
             </div>
-            <div className='items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"'>
+            <div className='items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1'>
               <Sublinks />
             </div>
           </div>
