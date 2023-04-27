@@ -165,7 +165,7 @@ const TutorialIndex = () => {
               />
             </div>
           </div>
-          <div className='min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16'>
+          <main className='min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16'>
             <article>
               <header>
                 <h1 className='font-display text-4xl font-bold tracking-tight text-black'>
@@ -268,7 +268,7 @@ const TutorialIndex = () => {
                 </dd>
               </div>
             </dl>
-          </div>
+          </main>
         </div>
       </div>
       <Cta />
