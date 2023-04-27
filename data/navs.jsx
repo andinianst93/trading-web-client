@@ -61,7 +61,7 @@ const navlink = [
   },
   {
     name: 'Berita dan Analisa',
-    id: 2,
+    id: 22,
     icon: <BiNews />,
     submenu: true,
     sublinks: [

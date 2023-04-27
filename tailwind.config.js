@@ -15,6 +15,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1142px',
+      xxl: '1400px',
     },
     fontFamily: {
       mulish: ['Mulish', 'sans-serif'],

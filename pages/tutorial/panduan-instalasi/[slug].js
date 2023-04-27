@@ -5,43 +5,147 @@ import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
 import Container from '@/components/layout/container'
 import Breadcrumb8 from '@/components/Breadcrumb8'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
+import Cta from '@/components/Cta'
 const navigation = [
   {
     title: 'Panduan Instalasi',
+    link: '/panduan-instalasi',
     links: [
       {
+        title: 'Cara Install Aplikasi Trading Forex XXX',
+        href: `cara-install-aplikasi-trading-xxx`,
+      },
+      {
         title: 'Cara Instal MetaTrader 5 di PC',
-        href: '/panduan-instalasi/cara-instal-metatrader-5-pc',
+        href: `cara-instal-metatrader-5-pc`,
       },
       {
-        title: 'Cara Instal MetaTrader 5 di Android',
-        href: '/panduan-instalasi/cara-instal-metatrader-5-android',
+        title: 'Cara Install MetaTrader 5 di Android',
+        href: `cara-instal-metatrader-5-android`,
       },
       {
-        title: 'Cara Instal MetaTrader 5 di iOS',
-        href: '/panduan-instalasi/cara-instal-metatrader-5-ios',
+        title: 'Cara Install MetaTrader di iOS',
+        href: 'cara-install-metatrader-5-ios',
       },
       {
         title: 'Cara Uninstall MetaTrader 5',
-        href: '/panduan-instalasi/cara-uninstall-metatrader-5',
+        href: 'cara-uninstall-metatrader-5',
+      },
+    ],
+  },
+  {
+    title: 'Pembukaan Akun',
+    link: '/pembukaan-akun',
+    links: [
+      {
+        title: 'Perbedaan Akun Demo dan Real Forex',
+        href: '/tutorial/pembukaan-akun/perbedaan-akun-demo-dan-real-forex',
+      },
+      {
+        title: 'Cara Buka Akun Demo ',
+        href: '/tutorial/pembukaan-akun/cara-buka-akun-demo',
+      },
+      {
+        title: 'Cara Buka Akun Real',
+        href: '/tutorial/pembukaan-akun/cara-buka-akun-real',
+      },
+      {
+        title: 'Cara Verifikasi Akun',
+        href: '/tutorial/pembukaan-akun/cara-verifikasi-akun',
+      },
+      {
+        title: 'Cara Login Akun Forex',
+        href: '/tutorial/pembukaan-akun/cara-login-akun-forex',
+      },
+    ],
+  },
+  {
+    title: 'Kelola Akun Saya',
+    link: '/kelola-akun-saya',
+    links: [
+      {
+        title: 'Cara Ubah Password',
+        href: '/tutorial/kelola-akun-saya/cara-ubah-password',
+      },
+      {
+        title: 'Cara Ganti Email',
+        href: '/tutorial/kelola-akun-saya/cara-ganti-email',
+      },
+      {
+        title: 'Cara Ganti Nomor Telepon',
+        href: '/tutorial/kelola-akun-saya/cara-ganti-nomor-telepon',
+      },
+      {
+        title: 'Cara Membatalkan Akun',
+        href: '/tutorial/kelola-akun-saya/cara-membatalkan-akun',
+      },
+      {
+        title: 'Cara Subscribe Copy Trade',
+        href: '/tutorial/kelola-akun-saya/cara-subscribe-copy-trade',
+      },
+    ],
+  },
+  {
+    title: 'Kelola Dana Saya',
+    link: '/tutorial/kelola-dana-saya',
+    links: [
+      {
+        title: 'Cara Deposit Melalui Bank Lokal',
+        href: '/tutorial/kelola-dana-saya/cara-deposit-melalui-bank-lokal',
+      },
+      {
+        title: 'Cara Penarikan Dana di Aplikasi ',
+        href: '/tutorial/kelola-dana-saya/cara-penarikan-dana-di-aplikasi',
+      },
+    ],
+  },
+  {
+    title: 'Cara Trading',
+    link: '/tutorial/cara-trading',
+    links: [
+      {
+        title: 'Cara Memulai Trading Forex di Aplikasi XXX',
+        href: '/tutorial/cara-trading/cara-memulai-trading-forex-di-aplikasi-xxx',
+      },
+      {
+        title: 'Fitur-fitur Trading di XXX',
+        href: '/tutorial/cara-trading/fitur-trading-xxx',
+      },
+      {
+        title: 'Cara menggunakan stop loss dan take profit',
+        href: '/tutorial/cara-trading/cara-menggunakan-stop-loss-dan-take-profit',
+      },
+      {
+        title: 'Cara Menggunakan Signal Forex',
+        href: '/tutorial/cara-trading/cara-menggunakan-sinyal-forex',
       },
     ],
   },
 ]
 const SinglePi = ({ articles }) => {
+  let router = useRouter()
+
   const art = articles.map((x) => x.attributes)
   const [{ title, description, body, updatedAt }] = art
+  let allLinks = navigation.flatMap((section) => section.links)
+  let linkIndex = allLinks.findIndex((link) => link.href === router.query.slug)
+  let previousPage = allLinks[linkIndex - 1]
+  let nextPage = allLinks[linkIndex + 1]
+
   return (
     <Container>
       <div className='overflow-x-hidden '>
         <nav>
-          <Breadcrumb8
-            title1='Tutorial'
-            title2='Panduan Instalasi'
-            title3={title}
-            slug2='panduan-instalasi'
-          />
+          <div className='mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:px-8 '>
+            <Breadcrumb8
+              title1='Tutorial'
+              title2='Panduan Instalasi'
+              title3={title}
+              slug2='panduan-instalasi'
+            />
+          </div>
         </nav>
         <div className='relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12'>
           <div className='hidden lg:relative lg:block lg:flex-none'>
@@ -76,38 +180,43 @@ const SinglePi = ({ articles }) => {
               </div>
             </article>
             <dl className='mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800'>
-              {/* <div>
-            <dt className='font-display text-sm font-medium text-slate-900 dark:text-white'>
-              Previous
-            </dt>
-            <dd className='mt-1'>
-              <Link
-                href='#'
-                className='text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300'
-              >
-                <span aria-hidden='true'>&larr;</span> Tutorial
-              </Link>
-            </dd>
-          </div> */}
-
-              <div className='ml-auto text-right'>
-                <dt className='font-display text-sm font-medium text-slate-900 dark:text-white'>
-                  Next
-                </dt>
-                <dd className='mt-1'>
-                  <Link
-                    href='#'
-                    className='text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300'
-                  >
-                    Cara Instal MetaTrader di Android{' '}
-                    <span aria-hidden='true'>&rarr;</span>
-                  </Link>
-                </dd>
-              </div>
+              {previousPage && (
+                <div>
+                  <dt className='font-display text-sm font-medium text-slate'>
+                    Previous
+                  </dt>
+                  <dd className='mt-1'>
+                    <Link
+                      href={`${previousPage.href}`}
+                      className='text-base font-semibold text-blue'
+                    >
+                      <span aria-hidden='true'>&larr;</span>{' '}
+                      {previousPage.title}
+                    </Link>
+                  </dd>
+                </div>
+              )}
+              {nextPage && (
+                <div className='ml-auto text-right'>
+                  <dt className='font-display text-sm font-medium text-slate'>
+                    Next
+                  </dt>
+                  <dd className='mt-1'>
+                    <Link
+                      href={`${nextPage.href}`}
+                      className='text-base font-semibold text-blue'
+                    >
+                      {nextPage.title}
+                      <span aria-hidden='true'>&rarr;</span>
+                    </Link>
+                  </dd>
+                </div>
+              )}
             </dl>
           </div>
         </div>
       </div>
+      <Cta />
     </Container>
   )
 }
