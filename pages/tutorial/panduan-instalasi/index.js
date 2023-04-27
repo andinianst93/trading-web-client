@@ -4,7 +4,7 @@ import { Navigation } from '@/components/tutorial/Navigation'
 import ReactMarkdown from 'react-markdown'
 import remarkBreaks from 'remark-breaks'
 import Container from '@/components/layout/container'
-import Breadcrumb from '@/components/Breadcrumb'
+import Breadcrumb3 from '@/components/Breadcrumb3'
 import Link from 'next/link'
 import Cta from '@/components/Cta'
 const navigation = [
@@ -129,7 +129,11 @@ const TutorialIndex = () => {
       <div className='overflow-x-hidden '>
         <nav className='bg-black'>
           <div className='mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:px-8 '>
-            <Breadcrumb title1='Tutorial' />
+            <Breadcrumb3
+              title1='Tutorial'
+              slug='tutorial'
+              title2='Panduan Instalasi'
+            />
           </div>
         </nav>
         <section className='bg-black'>
