@@ -29,7 +29,7 @@ export default function Hero() {
       <svg
         viewBox='0 0 1108 632'
         aria-hidden='true'
-        className='absolute top-10 left-[calc(50%-4rem)] -z-10 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]'
+        className='hidden lg:block absolute top-10 left-[calc(50%-4rem)] -z-10 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-38rem)]'
       >
         <path
           fill='url(#175c433f-44f6-4d59-93f0-c5c51ad5566d)'
