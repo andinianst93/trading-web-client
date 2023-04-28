@@ -137,7 +137,7 @@ const TutorialIndex = () => {
           </div>
         </nav>
         <section className='bg-black'>
-          <div className='mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:pb-14'>
+          <div className='mx-auto max-w-7xl py-8 px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:pb-14'>
             <div className='mx-auto max-w-2xl lg:mx-0 lg:flex-auto'>
               <p className='mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
                 Esse id magna consectetur
