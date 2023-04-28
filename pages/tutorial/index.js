@@ -136,12 +136,11 @@ const TutorialIndex = () => {
           <div className='mx-auto max-w-7xl py-8 px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:pb-14'>
             <div className='mx-auto max-w-2xl lg:mx-0 lg:flex-auto'>
               <p className='mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                Esse id magna consectetur
+                Trading App
               </p>
               <p className='mt-6 text-lg leading-8 text-gray-600'>
-                Esse id magna consectetur fugiat non dolor in ad laboris magna
-                laborum ea consequat. Nisi irure aliquip nisi adipisicing veniam
-                voluptate id. In veniam incididunt ex veniam adipisicing sit.
+                Trade on-the-go with our forex trading app. Access real-time
+                data, charts and analysis on your mobile device with ease.
               </p>
               <div className='mt-10 flex items-center gap-x-6'>
                 <a
@@ -169,71 +168,84 @@ const TutorialIndex = () => {
             <article>
               <header>
                 <h1 className='font-display text-4xl font-bold tracking-tight text-black'>
-                  Lorem, ipsum.
+                  Getting Started
                 </h1>
               </header>
 
               <div className='mt-12 prose max-w-none text-black leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat libero sequi, nemo voluptatem saepe ad laudantium
-                  itaque at exercitationem sint.
+                  Halaman ini adalah ikhtisar dari tutorial atau cara
+                  menggunakan aplikasi XXX dan sumber-sumber terkait. Pelajari
+                  apa sebenarnya aplikasi kami dan MetaTrader 5 di dalam
+                  tutorial ini.
                 </p>
               </div>
-              <div className='mt-8 grid lg:grid-cols-2 gap-4'>
+              <div className='mt-8 grid lg:grid-cols-1 gap-4'>
                 <Link
                   href='/tutorial/panduan-instalasi'
-                  className='block max-w-sm p-6 bg-white border border-gray-200 text-black rounded-lg shadow hover:text-blue'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
                 >
-                  <h2 className='mb-2 text-2xl  font-bold tracking-tight text-gray-900'>
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
                     Panduan Instalasi
                   </h2>
                   <p className='font-normal '>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Penjelasan tentang persyaratan sistem dan langkah-langkah
+                    untuk mengunduh dan menginstal aplikasi trading forex XXX
+                    dan MetaTrader 5 di komputer atau perangkat mobile.
                   </p>
                 </Link>
                 <Link
                   href='/tutorial/pembukaan-akun'
-                  className='block max-w-sm p-6 text-black bg-white border border-gray-200 rounded-lg shadow hover:text-blue'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
                 >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
                     Pembukaan Akun
                   </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  <p className='font-normal'>
+                    Langkah-langkah untuk membuka akun demo atau akun real dan
+                    penjelasan tentang fitur-fitur yang tersedia pada akun
+                    tersebut.
                   </p>
                 </Link>
                 <Link
                   href='/tutorial/kelola-akun-saya'
-                  className='block max-w-sm p-6 text-black bg-white border border-gray-200 rounded-lg shadow hover:text-blue'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
                 >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
                     Kelola Akun Saya
                   </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  <p className='font-normal'>
+                    Langkah-langkah untuk mengubah password, email, nomor
+                    handphone, atau membatalkan akun, serta penjelasan tentang
+                    fitur-fitur dan kebijakan-kebijakan yang terkait dengan
+                    pengelolaan akun.
                   </p>
                 </Link>
                 <Link
                   href='/tutorial/kelola-dana-saya'
-                  className='block max-w-sm p-6 bg-white border text-black border-gray-200 rounded-lg shadow hover:text-blue'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
                 >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
                     Kelola Dana Saya
                   </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  <p className='font-normal'>
+                    Langkah-langkah untuk melakukan deposit, withdrawal, atau
+                    transfer dana, serta penjelasan tentang metode-metode
+                    pembayaran dan kebijakan-kebijakan yang terkait dengan
+                    pengelolaan dana.
                   </p>
                 </Link>
                 <Link
                   href='/tutorial/cara-trading'
-                  className='block max-w-sm p-6 bg-white border text-black border-gray-200 rounded-lg shadow hover:text-blue'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
                 >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
                     Cara Trading
                   </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                  <p className='font-normal'>
+                    Penjelasan tentang cara menggunakan platform trading XXX dan
+                    MetaTrader 5, serta penjelasan tentang fitur-fitur dan
+                    indikator-indikator yang tersedia pada platform trading.
                   </p>
                 </Link>
               </div>

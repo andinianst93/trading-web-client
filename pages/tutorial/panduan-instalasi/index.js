@@ -173,71 +173,79 @@ const TutorialIndex = () => {
             <article>
               <header>
                 <h1 className='font-display text-4xl font-bold tracking-tight text-black'>
-                  Overview
+                  Panduan Instalasi
                 </h1>
               </header>
 
               <div className='mt-12 prose max-w-none text-black leading-normal prose-h2:mt-[1em] prose-h2:mb-[0.5em] md:items-start w-full'>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat libero sequi, nemo voluptatem saepe ad laudantium
-                  itaque at exercitationem sint.
+                  Selamat datang di panduan instalasi untuk aplikasi trading
+                  forex XXX dan MetaTrader 5. Halaman ikhtisar ini akan membantu
+                  Anda menginstal kedua aplikasi tersebut pada perangkat Anda.
                 </p>
               </div>
-              <div className='mt-8 grid lg:grid-cols-2 gap-4'>
+              <div className='mt-8 grid lg:grid-cols-1 gap-4'>
                 <Link
-                  href='/panduan-instalasi/cara-install-aplikasi-trading-xxx'
-                  className='block max-w-sm p-6 bg-white border border-gray-200 text-black rounded-lg shadow hover:text-blue'
+                  href='/tutorial/panduan-instalasi/cara-install-aplikasi-trading-xxx'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
                 >
-                  <h2 className='mb-2 text-2xl  font-bold tracking-tight text-gray-900'>
-                    Lorem ipsum dolor sit
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
+                    Instalasi Aplikasi Trading Forex XXX
+                  </h2>
+                  <p className='font-normal'>
+                    Langkah-langkah instalasi aplikasi trading forex XXX di
+                    perangkat Windows dan MacOS
+                  </p>
+                </Link>
+                <Link
+                  href='/tutorial/panduan-instalasi/cara-instal-metatrader-5-pc'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
+                >
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
+                    Instalasi MetaTrader 5 di Windows dan MacOS
+                  </h2>
+                  <p>
+                    Langkah-langkah instalasi MetaTrader 5 di perangkat Windows
+                    dan MacOS dan cara mengatur pengaturan awal setelah
+                    instalasi.
+                  </p>
+                </Link>
+                <Link
+                  href='/tutorial/panduan-instalasi/cara-instal-metatrader-5-android'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
+                >
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
+                    Instalasi MetaTrader 5 di Android
+                  </h2>
+                  <p>
+                    Langkah-langkah instalasi MetaTrader 5 di perangkat Android,
+                    cara login ke akun trading, dan cara menggunakan fitur-fitur
+                    MetaTrader 5.
+                  </p>
+                </Link>
+                <Link
+                  href='/tutorial/panduan-instalasi/cara-install-metatrader-5-ios'
+                  className='block max-w-3xl p-6 bg-white text-black rounded-none shadow'
+                >
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
+                    Panduan Instalasi MetaTrader 5 di iOS
+                  </h2>
+                  <p>
+                    Langkah-langkah instalasi MetaTrader 5 di perangkat iOS,
+                    cara login ke akun trading, dan cara menggunakan fitur-fitur
+                    MetaTrader 5.
+                  </p>
+                </Link>
+                <Link
+                  href='/tutorial/panduan-instalasi/cara-uninstall-metatrader-5'
+                  className='block max-w-3xl p-6 bg-white  text-black rounded-none shadow'
+                >
+                  <h2 className='mb-2 text-lg font-bold tracking-tight text-gray-900'>
+                    Cara Uninstall MetaTrader 5
                   </h2>
                   <p className='font-normal '>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </p>
-                </Link>
-                <Link
-                  href='/panduan-instalasi/cara-instal-metatrader-5-pc'
-                  className='block max-w-sm p-6 text-black bg-white border border-gray-200 rounded-lg shadow hover:text-blue'
-                >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                    Lorem ipsum dolor sit
-                  </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </p>
-                </Link>
-                <Link
-                  href='/panduan-instalasi/cara-instal-metatrader-5-android'
-                  className='block max-w-sm p-6 text-black bg-white border border-gray-200 rounded-lg shadow hover:text-blue'
-                >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                    Lorem ipsum dolor sit
-                  </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </p>
-                </Link>
-                <Link
-                  href='/panduan-instalasi/cara-install-metatrader-5-ios'
-                  className='block max-w-sm p-6 bg-white border text-black border-gray-200 rounded-lg shadow hover:text-blue'
-                >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                    Lorem ipsum dolor sit
-                  </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
-                  </p>
-                </Link>
-                <Link
-                  href='/panduan-instalasi/cara-uninstall-metatrader-5'
-                  className='block max-w-sm p-6 bg-white border text-black border-gray-200 rounded-lg shadow hover:text-blue'
-                >
-                  <h2 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                    Lorem ipsum dolor sit
-                  </h2>
-                  <p className='font-normal text-gray-700 dark:text-gray-400'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Langkah-langkah untuk menghapus MetaTrader 5 di perangkat
+                    Anda.
                   </p>
                 </Link>
               </div>

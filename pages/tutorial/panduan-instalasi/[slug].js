@@ -11,7 +11,7 @@ import Cta from '@/components/Cta'
 const navigation = [
   {
     title: 'Panduan Instalasi',
-    link: '/panduan-instalasi',
+    link: '/tutorial/panduan-instalasi',
     links: [
       {
         title: 'Cara Install Aplikasi Trading Forex XXX',
@@ -37,7 +37,7 @@ const navigation = [
   },
   {
     title: 'Pembukaan Akun',
-    link: '/pembukaan-akun',
+    link: '/tutorial/pembukaan-akun',
     links: [
       {
         title: 'Perbedaan Akun Demo dan Real Forex',
@@ -63,7 +63,7 @@ const navigation = [
   },
   {
     title: 'Kelola Akun Saya',
-    link: '/kelola-akun-saya',
+    link: '/tutorial/kelola-akun-saya',
     links: [
       {
         title: 'Cara Ubah Password',
