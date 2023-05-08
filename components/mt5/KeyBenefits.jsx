@@ -7,37 +7,37 @@ const features = [
   {
     name: 'Advanced Charting Tools',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      '21 timeframes, 80+ technical indicators, and analytical objects, providing traders with in-depth market analysis.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Multiple Order Types',
+    name: 'Mobile Trading',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      'Available on both desktop and mobile devices, allowing traders to access their accounts and trade from anywhere at any time.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
     name: 'Automated Trading',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+      'With built-in Expert Advisors (EAs), traders can automate their trading strategies based on pre-defined rules, removing the need for manual intervention.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Flexible Trading System for Every Possible Strategy',
+    name: 'Multiple Asset Classes',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      'Supports trading in multiple asset classes, including Forex, stocks, commodities, and cryptocurrencies',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'Professional technical analysis',
+    name: 'Customizable Interface',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      "The platform's interface is highly customizable, allowing traders to personalize it to their preferences, including custom indicators, scripts, and more.",
     icon: <MdWebAsset className='w-8 h-8' />,
   },
   {
-    name: 'All-in-one Trading Platforms',
+    name: 'Copy Trading',
     description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+      'Allows traders to automatically copy the trades of other successful traders, making it easier for beginners to get started and learn from experienced traders.',
     icon: <MdWebAsset className='w-8 h-8' />,
   },
 ]
