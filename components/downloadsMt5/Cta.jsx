@@ -3,7 +3,7 @@ export default function Cta() {
   return (
     <>
       <section>
-        <div className='bg-black'>
+        <div className='bg-white'>
           <div className='mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8'>
             <div className='relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0'>
               <svg
@@ -34,14 +34,14 @@ export default function Cta() {
                 </defs>
               </svg>
               <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
-                <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
+                <h2 className='text-3xl font-bold tracking-tight text-black sm:text-4xl'>
                   MetaTrader 5 for Desktop
                 </h2>
-                <p className='mt-6 text-lg leading-8 text-white'>
+                <p className='mt-6 text-lg leading-8 text-black'>
                   Ac euismod vel sit maecenas id pellentesque eu sed
                   consectetur. Malesuada adipiscing sagittis vel nulla.
                 </p>
-                <ul className='list-disc	ml-4 text-white'>
+                <ul className='list-disc	ml-4 text-black'>
                   <li>Feature 1</li>
                   <li>Feature 1</li>
                   <li>Feature 1</li>
@@ -50,13 +50,13 @@ export default function Cta() {
                 <div className='mt-10 grid grid-cols-1 gap-2'>
                   <a
                     href='#'
-                    className='rounded-md bg-white px-5 py-1.5 text-sm font-semibold text-black shadow-sm w-[250px]'
+                    className='rounded-md bg-black px-5 py-1.5 text-sm font-semibold text-white shadow-sm w-[250px] text-center'
                   >
                     Download MT5 For Windows
                   </a>
                   <a
                     href='#'
-                    className='rounded-md bg-white px-5 py-1.5 text-sm font-semibold text-black shadow-sm w-[250px]'
+                    className='rounded-md bg-black px-5 py-1.5 text-sm font-semibold text-center text-white shadow-sm w-[250px]'
                   >
                     Download MT5 For MacOS
                   </a>
@@ -156,15 +156,15 @@ export default function Cta() {
                 <div className='mt-10 grid grid-cols-1 gap-2'>
                   <a
                     href='#'
-                    className='rounded-md bg-black px-5 py-1.5 text-sm font-semibold text-white shadow-sm w-[250px]'
+                    className='rounded-md text-center bg-black px-5 py-1.5 text-sm font-semibold text-white shadow-sm w-[250px]'
                   >
-                    Download MT5 For Android
+                    Download For Android
                   </a>
                   <a
                     href='#'
-                    className='rounded-md bg-black px-5 py-1.5 text-sm font-semibold text-white shadow-sm w-[250px]'
+                    className='rounded-md text-center bg-black px-5 py-1.5 text-sm font-semibold text-white shadow-sm w-[250px]'
                   >
-                    Download MT5 For iOS
+                    Download For iOS
                   </a>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export default function Cta() {
         </div>
       </section>
       <section>
-        <div className='bg-black'>
+        <div className='bg-white'>
           <div className='mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8'>
             <div className='relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0'>
               <svg
@@ -204,14 +204,14 @@ export default function Cta() {
                 </defs>
               </svg>
               <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
-                <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
-                  MetaTrader 5 WebTerminal
+                <h2 className='text-3xl font-bold tracking-tight text-black sm:text-4xl'>
+                  MetaTrader 5 Web Terminal
                 </h2>
-                <p className='mt-6 text-lg leading-8 text-white'>
+                <p className='mt-6 text-lg leading-8 text-black'>
                   Ac euismod vel sit maecenas id pellentesque eu sed
                   consectetur. Malesuada adipiscing sagittis vel nulla.
                 </p>
-                <ul className='list-disc	ml-4 text-white'>
+                <ul className='list-disc	ml-4 text-black'>
                   <li>Feature 1</li>
                   <li>Feature 1</li>
                   <li>Feature 1</li>
@@ -220,9 +220,9 @@ export default function Cta() {
                 <div className='mt-10 grid grid-cols-1 gap-2'>
                   <a
                     href='#'
-                    className='rounded-md bg-white px-5 py-1.5 text-sm font-semibold text-black shadow-sm w-fit'
+                    className='rounded-md bg-black px-5 py-1.5 text-sm font-semibold text-white shadow-sm w-fit'
                   >
-                    Open Account
+                    Start Now
                   </a>
                 </div>
               </div>

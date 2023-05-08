@@ -8,11 +8,11 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className='relative isolate overflow-hidden bg-gray-900'>
+    <div className='relative isolate overflow-hidden bg-black'>
       <div className='px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
           <div className='text-center'>
-            <h1 className='text-4xl font-bold tracking-tight text-black sm:text-6xl'>
+            <h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
               Download MetaTrader 5
             </h1>
             <p className='mt-6 text-lg leading-8 text-gray-300'>

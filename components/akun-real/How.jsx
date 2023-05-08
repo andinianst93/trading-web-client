@@ -85,13 +85,13 @@ export default function How() {
               <dl className='mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none'>
                 {features.map((feature) => (
                   <div key={feature.name} className='relative pl-9'>
-                    <h3 className='inline font-semibold text-gray-900'>
+                    <p className='inline font-semibold text-gray-900'>
                       <feature.icon
                         className='absolute top-1 left-1 h-5 w-5 text-indigo-600'
                         aria-hidden='true'
                       />
                       {feature.name}.
-                    </h3>{' '}
+                    </p>{' '}
                     <p className='inline'>{feature.description}</p>
                   </div>
                 ))}

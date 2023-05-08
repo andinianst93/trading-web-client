@@ -12,11 +12,6 @@ const faqs = [
       answer:
         'To open a forex real account, you need to choose a reputable forex broker, fill in your personal information, verify your identity, fund your account, and start trading. Follow our step-by-step guide above for more details.',
     },
-    {
-      question: 'What documents do I need to open a forex real account?',
-      answer:
-        'To comply with anti-money laundering regulations, most brokers will require you to provide a copy of your passport or national ID card, as well as a recent utility bill or bank statement to verify your identity and address.',
-    },
   ],
   [
     {
@@ -25,23 +20,12 @@ const faqs = [
         'The minimum deposit requirements for forex real accounts vary depending on the broker and account type. Some brokers may require a minimum deposit of $100, while others may require $1,000 or more. Be sure to check the minimum deposit requirements before opening your account.',
     },
     {
-      question:
-        'What trading platforms do forex brokers offer for real accounts?',
+      question: 'What documents do I need to open a forex real account?',
       answer:
-        'Forex brokers offer various trading platforms for real accounts, such as MetaTrader 4, MetaTrader 5, cTrader, and proprietary platforms. These platforms provide advanced charting, trading tools, and analysis features that you can use to trade the forex market.',
-    },
-    {
-      question: 'Is forex trading risky?',
-      answer:
-        'Yes, forex trading involves significant risk, and you should be aware of the risks before you start trading. Be sure to educate yourself about the forex market, practice risk management, and use trading strategies to minimize your risks.',
+        'To comply with anti-money laundering regulations, most brokers will require you to provide a copy of your passport or national ID card, as well as a recent utility bill or bank statement to verify your identity and address.',
     },
   ],
   [
-    {
-      question: 'What support do forex brokers offer for real accounts?',
-      answer:
-        'Forex brokers offer various support options for real accounts, such as email, phone, and live chat. Some brokers also provide educational materials, trading tools, and market analysis to help you improve your trading skills and make informed trading decisions.',
-    },
     {
       question:
         'What is the difference between a forex demo account and a forex real account?',

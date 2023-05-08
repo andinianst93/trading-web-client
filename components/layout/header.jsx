@@ -20,7 +20,7 @@ const Header = () => {
               <div className='lg:flex lg:items-center hidden'>
                 <Link
                   href='/akun'
-                  className='bg-transparent text-white font-semibold py-2 px-4 border rounded lg:mr-3'
+                  className='rounded-md bg-blue px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 hidden lg:block'
                 >
                   Mulai Trading
                 </Link>
@@ -28,7 +28,7 @@ const Header = () => {
               {/* humberger menu */}
               <Link
                 href='/akun'
-                className='bg-black text-white font-semibold py-2 px-4 border rounded lg:hidden block'
+                className='rounded-md bg-blue px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 lg:hidden block'
               >
                 Mulai Trading
               </Link>
