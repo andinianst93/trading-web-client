@@ -3,15 +3,11 @@ import Link from 'next/link'
 const faqs = [
   [
     {
-      question: 'What is MetaTrader 5?',
+      question: 'Can I trade multiple assets on MetaTrader 5?',
       answer:
-        'MetaTrader 5 is a popular trading platform used by traders to analyze financial markets, place orders, and manage their trading accounts.',
+        'Yes, you can trade a wide range of assets on MetaTrader 5, including forex, stocks, commodities, and cryptocurrencies.',
     },
-    {
-      question: 'What are the main features of MetaTrader 5?',
-      answer:
-        'The main features of MetaTrader 5 include advanced charting tools, multiple order types, automated trading through expert advisors, market depth analysis, and a wide range of technical indicators.',
-    },
+
     {
       question: 'Can I use MetaTrader 5 on my mobile device?',
       answer:
@@ -19,11 +15,6 @@ const faqs = [
     },
   ],
   [
-    {
-      question: 'Can I trade multiple assets on MetaTrader 5?',
-      answer:
-        'Yes, you can trade a wide range of assets on MetaTrader 5, including forex, stocks, commodities, and cryptocurrencies.',
-    },
     {
       question: 'How do I open a trading account on MetaTrader 5?',
       answer:
@@ -45,11 +36,6 @@ const faqs = [
       question: 'What is the difference between MetaTrader 4 and MetaTrader 5?',
       answer:
         'MetaTrader 5 is the successor to MetaTrader 4, with improved features such as a more advanced trading system, enhanced charting tools, and multi-currency strategy tester.',
-    },
-    {
-      question: 'What are the system requirements for MetaTrader 5?',
-      answer:
-        'The minimum system requirements for MetaTrader 5 are Windows 7 or later, 1GB of RAM, and 100MB of free disk space.',
     },
   ],
 ]

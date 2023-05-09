@@ -8,7 +8,7 @@ const Hero = () => {
     <section className='bg-black bg-[url(/images/banner-bg.png)] py-[82px] sm:-mx-[250px]  lg:-mx-[150px] lg:py-[106px]'>
       <div className='container'>
         <div className='relative z-[1] text-white lg:w-3/5 xl:w-1/2 mx-auto flex flex-col justify-center items-center'>
-          <h1 className='text-lg text-center leading-none font-extrabold lg:text-5xl '>
+          <h1 className='text-4xl text-center leading-none font-extrabold lg:text-5xl '>
             Compare Leading Platforms
           </h1>
           <p className='my-8 text-lg text-center'>

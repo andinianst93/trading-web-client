@@ -3,14 +3,9 @@ import Link from 'next/link'
 const faqs = [
   [
     {
-      question: 'What is XXX forex app trading platform?',
+      question: 'How do I download XXX forex trading app?',
       answer:
-        'Forex app trading is the process of buying and selling currencies on a mobile device using a dedicated trading app.',
-    },
-    {
-      question: 'What are the advantages of using XXX forex trading app?',
-      answer:
-        'Forex trading apps offer several advantages, including the ability to trade on-the-go, real-time market data, and access to trading tools and resources.',
+        'You can download a forex trading app from your app store by searching for your brokers app or by visiting their website.',
     },
     {
       question: 'Is XXX forex app trading safe and secure?',
@@ -19,11 +14,6 @@ const faqs = [
     },
   ],
   [
-    {
-      question: 'How do I download XXX forex trading app?',
-      answer:
-        'You can download a forex trading app from your app store by searching for your brokers app or by visiting their website.',
-    },
     {
       question:
         'What are the minimum deposit requirements for XXX forex web trading?',
@@ -38,12 +28,6 @@ const faqs = [
     },
   ],
   [
-    {
-      question:
-        'What trading tools and resources are available on XXX forex trading app?',
-      answer:
-        'Yes, you can trade forex on a tablet or smartwatch using a forex trading app. Simply download the app on your device and start trading.',
-    },
     {
       question:
         'How can I make deposits and withdrawals on XXX forex trading app?',

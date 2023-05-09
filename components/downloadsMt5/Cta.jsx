@@ -33,7 +33,7 @@ export default function Cta() {
                   </radialGradient>
                 </defs>
               </svg>
-              <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
+              <div className='mx-auto max-w-md text-left lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
                 <h2 className='text-3xl font-bold tracking-tight text-black sm:text-4xl'>
                   MetaTrader 5 for Desktop
                 </h2>
@@ -139,7 +139,7 @@ export default function Cta() {
                   </foreignObject>
                 </svg>
               </div>
-              <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
+              <div className='mx-auto max-w-md text-left py-12 lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
                 <h2 className='text-3xl font-bold tracking-tight text-black sm:text-4xl'>
                   MetaTrader 5 for Mobile
                 </h2>
@@ -203,7 +203,7 @@ export default function Cta() {
                   </radialGradient>
                 </defs>
               </svg>
-              <div className='mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
+              <div className='mx-auto max-w-md text-left lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
                 <h2 className='text-3xl font-bold tracking-tight text-black sm:text-4xl'>
                   MetaTrader 5 Web Terminal
                 </h2>

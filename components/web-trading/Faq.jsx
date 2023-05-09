@@ -3,28 +3,17 @@ import Link from 'next/link'
 const faqs = [
   [
     {
-      question: 'What is XXX forex web trading platform?',
-      answer:
-        'Forex web trading is the process of buying and selling currencies online through a web-based trading platform.',
-    },
-    {
       question: 'Is XXX forex web trading safe and secure?',
       answer:
         'Yes, forex web trading can be safe and secure as long as you choose a reputable broker with strong security measures in place.',
     },
     {
-      question:
-        'What are the advantages of using a web-based forex trading platform?',
-      answer:
-        'Web-based forex trading platforms offer several advantages, including easy access from any device with an internet connection, real-time market data, and a user-friendly interface.',
-    },
-  ],
-  [
-    {
       question: 'How do I open an account for forex web trading?',
       answer:
         'To open an account for forex web trading, you will need to choose a broker, provide your personal information, and make a deposit.',
     },
+  ],
+  [
     {
       question:
         'What are the minimum deposit requirements for forex web trading?',
@@ -45,11 +34,7 @@ const faqs = [
       answer:
         'Forex web trading platforms offer a range of trading tools and resources, such as real-time charts, news and analysis, technical indicators, and trading signals.',
     },
-    {
-      question: 'What are the trading hours for forex web trading?',
-      answer:
-        'Forex web trading is available 24 hours a day, 5 days a week, from Sunday evening to Friday evening (Eastern Standard Time).',
-    },
+
     {
       question:
         'Can I trade forex on a mobile device using a web-based trading platform?',
